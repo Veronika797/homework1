@@ -8,6 +8,7 @@
 body {
     font-family: "Montserrat", system-ui;
     font-weight: 400;
+    text-decoration: none;
 }
 
 .center {
@@ -16,13 +17,14 @@ body {
 }
 
 .header {
-    height: 800px;
+    position: relative;
+    padding-bottom: 156px;
     background-color: #E1FF8F;
     padding-left: 120px;
     padding-right: 120px;
     padding-top: 196px;
-    background-image: url(img/Star\ 2.png), url(img/Star\ 3.svg);
-    background-position: top left, 159px 69px;
+    background-image: url(img/Group\ 1597880565.png);
+    background-position: 835px -334px;
     background-repeat: no-repeat;
     &__text {
         width: 768px;
@@ -35,7 +37,7 @@ body {
     &__description {
         width: 768px;
         font-size: 24px;
-        font-weight: 600;
+        font-weight: 400;
         line-height: 32px;
         text-align: left;
         margin-bottom: 48px;
@@ -55,6 +57,41 @@ body {
     }
 }
 
+.header__button:hover {
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+
+.text {
+    text-decoration: none;
+    color: #000;
+}
+
+.star1 {
+    position: absolute;
+    top: 94px;
+    left: 63px;
+}
+
+.star2 {
+    position: absolute;
+    top: 69px;
+    left: 156px;
+}
+
+.star3 {
+    position: absolute;
+    top: 568px;
+    left: 1013px;
+}
+
+.star4 {
+    position: absolute;
+    top: 538px;
+    left: 948px;
+}
+
 button {
     font-family: Montserrat;
     width: 247px;
@@ -69,6 +106,9 @@ button {
 .content {
     height: 1470px;
     background-color: rgb(32, 32, 39);
+    background-image: url(img/StarBig.png);
+    background-position: 933px 77px;
+    background-repeat: no-repeat;
     &__text {
         padding-top: 94px;
         padding-bottom: 24px;
@@ -97,10 +137,21 @@ button {
     }
 }
 
+.star5 {
+    position: absolute;
+    top: 1590px;
+    left: 28px;
+}
+
+.star6 {
+    position: absolute;
+    top: 1652px;
+    left: 45px;
+}
+
 .item {
     text-decoration: none;
     width: 378px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -134,8 +185,11 @@ button {
     }
 }
 
+.item:hover {
+    transform: scale(1.1);
+}
+
 .game {
     height: 314px;
     width: 378px;
 }
-
