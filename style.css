@@ -18,8 +18,10 @@
     padding-left: 120px;
     padding-right: 120px;
     padding-top: 196px;
-    position: relative;
+   background-image: url(), url();
+   background-position: top left, 20% 100px;
 }
+
 
 .header__text {
     font-family: Montserrat;
