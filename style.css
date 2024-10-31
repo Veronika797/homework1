@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", system-ui;
   font-weight: 400;
@@ -53,6 +57,26 @@ body {
 .header-line {
   height: 90px;
   background-color: rgb(188, 236, 48);
+  display: flex;
+  flex-direction: row;
+  gap: 51px;
+  padding-top: 27px;
+  padding-left: 19px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.header-line-text {
+  color: rgb(32, 32, 39);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.header-line-star {
+  width: 36px;
+  height: 36px;
 }
 
 .header__button:hover {
