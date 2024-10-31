@@ -1,5 +1,2 @@
-let user = {
-    name: 'Rik',
-    age: 30,
-    isAdmin: true
-}
+const name = prompt ('Введите ваше имя');
+alert (name);
