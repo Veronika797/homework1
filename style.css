@@ -18,8 +18,6 @@ body {
   position: relative;
   padding-bottom: 156px;
   background-color: #E1FF8F;
-  padding-left: 120px;
-  padding-right: 120px;
   padding-top: 196px;
   background-image: url(img/Group1597880565.png);
   background-position: 835px -334px;
@@ -51,8 +49,23 @@ body {
   text-align: center;
 }
 .header-line {
+  padding-left: 17px;
   height: 90px;
   background-color: rgb(188, 236, 48);
+  display: flex;
+  gap: 51px;
+  align-items: center;
+}
+.header-line__game {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.04em;
+  text-align: left;
+}
+.header-line__img {
+  width: 36px;
+  height: 36px;
 }
 
 .header__button:hover {
@@ -105,7 +118,7 @@ button {
   height: 1470px;
   background-color: rgb(32, 32, 39);
   background-image: url(img/StarBig.png);
-  background-position: 933px 77px;
+  background-position: 995px 115px;
   background-repeat: no-repeat;
 }
 .content__text {
@@ -194,6 +207,4 @@ button {
 .game {
   height: 314px;
   width: 378px;
-}
-
-@im;/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

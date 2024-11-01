@@ -50,8 +50,23 @@ body {
         text-align: center;
     }
     &-line {
+        padding-left: 17px;
         height: 90px;
         background-color: rgb(188, 236, 48);
+        display: flex;
+        gap: 51px;
+        align-items: center;
+        &__game {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 33px;
+            letter-spacing: 0.04em;
+            text-align: left;
+        }
+        &__img {
+            width: 36px;
+            height: 36px;
+        }
     }
 }
 
@@ -105,7 +120,7 @@ button {
     height: 1470px;
     background-color: rgb(32, 32, 39);
     background-image: url(img/StarBig.png);
-    background-position: 933px 77px;
+    background-position: 995px 115px;
     background-repeat: no-repeat;
     &__text {
         padding-top: 94px;
@@ -195,5 +210,3 @@ button {
     height: 314px;
     width: 378px;
 }
-
-@import 'mobile';
