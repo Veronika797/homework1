@@ -7,5 +7,10 @@
 // let years = 2007;
 // alert(years);
 
-let userName = 'Брендан Эйх';
-alert(userName);
+// let userName = 'Брендан Эйх';
+// alert(userName);
+
+let a = 10;
+let b = 2;
+let summ = a + b;
+alert (summ);
