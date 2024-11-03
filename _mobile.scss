@@ -37,6 +37,11 @@
             width: 19.34px;
             height: 19.34px;
         }
+        &__button {
+            width: 285px;
+            font-size: 16px;
+            line-height: 22.67px;
+        }
     }
     
         .mini-games {
@@ -53,10 +58,13 @@
             }
             &__top {
                 padding-top: 29px;
+                padding-bottom: 32px;
+            }
+            &__button {
+                width: 285px;
             }
         }
       
-    
         .game1, 
         .game3,
         .game5 {
@@ -70,12 +78,15 @@
             display: flex;
             flex-direction: column;
         }
-    
-        .content__game-name {
-            font-size: 32px;
-            font-weight: 700;
-            line-height: 39.01px;
-            text-align: left;
+        
+        .content {
+            padding-bottom: 49px;
+            &__game-name {
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 39.01px;
+                text-align: left;
+            }
             &__description {
                 width: 284px;
                 font-size: 16px;
@@ -84,6 +95,15 @@
                 text-align: left;
                 padding-top: 16px;
             }
+        }
+
+        .star3,
+        .star4,
+        .star7,
+        .star8,
+        .star9, 
+        .star10 {
+            display: none;
         }
     
         .footer {
@@ -110,7 +130,7 @@
     .header {
         background-image: url(img/starMobile.png);
         background-repeat: no-repeat;
-        background-position: 250px 0px;
+        background-position: 220px -5px;
         &-content {
             text-align: center;
         }
@@ -123,6 +143,7 @@
             font-size: 16px;
             line-height: 19.5px;
             text-align: center;
+            margin-bottom: 36px;
         }
         &-line {
             gap: 27px;
@@ -140,8 +161,7 @@
     
         .mini-games {
             &__box {
-                display: flex;
-                gap: 32px;
+                gap: 24px;
             }
             &__text {
                 font-size: 40px;
@@ -151,7 +171,10 @@
                 padding-bottom: 48px;
             }
             &__top {
-                padding-top: 29px;
+                padding-left: 29px;
+            }
+            &__button {
+                font-size: 16px;
             }
         }
       
@@ -185,6 +208,26 @@
             }
         }
     
+        .star1 {
+            top: 97px;
+            left: 30px;
+        }
+
+        .star2 {
+            top: 64px;
+            left: 85px;
+        }
+
+        .star3 {
+            top: 650px;
+            left: 280px;
+        }
+
+        .star4 {
+            top: 627px;
+            left: 253px;
+        }
+
         .footer {
             height: 100px;
             &-text {

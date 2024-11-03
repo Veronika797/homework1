@@ -53,5 +53,5 @@
 //     isAdmin: true
 // }
 
-const name = prompt ('Введите ваше имя');
-alert (name);
+// const name = prompt ('Введите ваше имя');
+// alert (name);
