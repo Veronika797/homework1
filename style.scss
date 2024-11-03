@@ -24,14 +24,12 @@ body {
     position: relative;
     padding-bottom: 156px;
     background-color: #E1FF8F;
-    padding-left: 120px;
-    padding-right: 120px;
     padding-top: 196px;
     background-image: url(img/Group1597880565.png);
     background-position: 835px -334px;
     background-repeat: no-repeat;
     &__text {
-        width: 768px;
+        max-width: 768px;
         font-size: 64px;
         font-weight: 700;
         line-height: 78.02px;
@@ -39,7 +37,7 @@ body {
         margin-bottom: 24px;
     }
     &__description {
-        width: 768px;
+        max-width: 768px;
         font-size: 24px;
         font-weight: 400;
         line-height: 32px;
