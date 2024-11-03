@@ -56,6 +56,8 @@ body {
         text-align: center;
     }
     &-line {
+        white-space: nowrap;
+        overflow: hidden;
         height: 90px;
         background-color: rgb(188, 236, 48);
         display: flex;
