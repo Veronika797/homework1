@@ -25,6 +25,12 @@
 // let summ = a / b;
 // alert (summ);
 
-let power = 2 ** 5;
-let result = power;
+// let power = 2 ** 5;
+// let result = power;
+// alert (result);
+
+let a = 9;
+let b = 2;
+let remainder = a / b;
+let result = remainder;
 alert (result);
