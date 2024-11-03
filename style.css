@@ -49,6 +49,8 @@ body {
   text-align: center;
 }
 .header-line {
+  white-space: nowrap;
+  overflow: hidden;
   padding-left: 17px;
   height: 90px;
   background-color: rgb(188, 236, 48);
@@ -62,6 +64,7 @@ body {
   line-height: 33px;
   letter-spacing: 0.04em;
   text-align: left;
+  text-transform: uppercase;
 }
 .header-line__img {
   width: 36px;
@@ -120,13 +123,13 @@ body {
 .star9 {
   position: absolute;
   left: 1249px;
-  top: 5684px;
+  top: 4885px;
 }
 
 .star10 {
   position: absolute;
   left: 1319px;
-  top: 5636px;
+  top: 4836px;
 }
 
 button {
@@ -268,6 +271,7 @@ button {
   flex-direction: column;
 }
 .item__text {
+  color: rgb(32, 32, 39);
   font-size: 16px;
   font-weight: 500;
   line-height: 110%;
