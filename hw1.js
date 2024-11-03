@@ -20,7 +20,11 @@
 // let summ = a - b;
 // alert (summ);
 
-let a = 10;
-let b = 2;
-let summ = a / b;
-alert (summ);
+// let a = 10;
+// let b = 2;
+// let summ = a / b;
+// alert (summ);
+
+let power = 2 ** 5;
+let result = power;
+alert (result);
