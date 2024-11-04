@@ -65,7 +65,7 @@ body {
         padding-left: 19px;
         justify-content: flex-start;
         align-items: flex-start;
-        &-text {
+        &__text {
             color: rgb(32, 32, 39);
             font-size: 30px;
             font-weight: 700;
@@ -74,12 +74,17 @@ body {
             text-align: left;
             text-transform: uppercase;
         }
-        &-star {
+        &__star {
             width: 36px;
             height: 36px;
         }
     }
 }
+
+    .header-line__text,
+    .header-line__star {
+        display: none;
+    }
 
 .header__button:hover {
     background-color: #fff;
@@ -94,26 +99,35 @@ body {
 
 .star1 {
     position: absolute;
-    top: 94px;
-    left: 63px;
+    // top: 94px;
+    // left: 63px;
+    top: 12%;
+    left: 5%;
 }
 
 .star2 {
     position: absolute;
-    top: 69px;
-    left: 156px;
+    // top: 69px;
+    // left: 156px;
+    top: 8%;
+    left: 10%;
 }
 
 .star3 {
+    // position: absolute;
+    // top: 568px;
+    // left: 1013px;
     position: absolute;
-    top: 568px;
-    left: 1013px;
+    top: 80%;
+    left: 70%
 }
 
 .star4 {
     position: absolute;
-    top: 538px;
-    left: 948px;
+    // top: 538px;
+    // left: 948px;
+    top: 75%;
+    left: 65%;
 }
 
 button {
@@ -127,12 +141,15 @@ button {
     background: rgb(32, 32, 39);
 }
 
+
+
 .content {
     height: 1470px;
     background-color: rgb(32, 32, 39);
-    background-image: url(img/StarBig.png);
-    background-position: 933px 77px;
-    background-repeat: no-repeat;
+    // background-image: url(img/StarBig.png);
+    // // background-position: 933px 77px;
+    // background-position: 115% 10%;
+    // background-repeat: no-repeat;
     &__text {
         padding-top: 94px;
         padding-bottom: 24px;
@@ -177,7 +194,15 @@ button {
     left: 45px;
 }
 
+.star-big {
+    position: absolute;
+    background-position: 115% 10%;
+    background-repeat: no-repeat;
+    transform: rotate(-6.77deg);
+}
+
 .item {
+    z-index: 1;
     text-decoration: none;
     width: 378px;
     display: flex;
