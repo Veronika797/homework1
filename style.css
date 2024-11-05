@@ -19,13 +19,11 @@ body {
 }
 
 .header {
+  overflow: hidden;
   position: relative;
   padding-bottom: 156px;
   background-color: #E1FF8F;
   padding-top: 196px;
-  background-image: url(img/Group1597880565.png);
-  background-position: 835px -334px;
-  background-repeat: no-repeat;
 }
 .header__text {
   max-width: 768px;
@@ -60,7 +58,6 @@ body {
   display: flex;
   flex-direction: row;
   gap: 51px;
-  padding-top: 27px;
   padding-left: 19px;
   justify-content: flex-start;
   align-items: flex-start;
@@ -93,6 +90,12 @@ body {
 .text {
   text-decoration: none;
   color: #000;
+}
+
+.star {
+  position: absolute;
+  top: -50%;
+  left: 58%;
 }
 
 .star1 {
@@ -131,8 +134,11 @@ button {
 }
 
 .content {
+  position: relative;
+  overflow: hidden;
   height: 1470px;
   background-color: rgb(32, 32, 39);
+  padding-bottom: 50px;
 }
 .content__text {
   padding-top: 94px;
@@ -162,25 +168,26 @@ button {
 }
 .content-section {
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
 }
 
 .star5 {
   position: absolute;
-  top: 1590px;
-  left: 28px;
+  top: 54%;
+  left: 1%;
 }
 
 .star6 {
   position: absolute;
-  top: 1652px;
-  left: 45px;
+  top: 58%;
+  left: 3%;
 }
 
 .star-big {
   position: absolute;
-  background-position: 115% 10%;
-  background-repeat: no-repeat;
+  top: 5%;
+  left: 70%;
   transform: rotate(-6.77deg);
 }
 
