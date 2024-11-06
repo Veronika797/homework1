@@ -45,30 +45,30 @@
 // let b = '3';
 // alert(Number(a) + Number(b));
 
-let monthNumber = 12;
+let monthNumber = 9;
 if (monthNumber < 1 || monthNumber > 12) {
-    console.log('Введите номер месяца от 1 до 12');
+    ('Введите номер месяца от 1 до 12');
 } else {
     switch (monthNumber) {
-        case 1: Январь
-        case 2: Февраль
-        case 12: Декабрь
-            console.log('Сезон: Зима');        
+        case 1:
+        case 2:
+        case 12:
+            alert('Зима');        
             break;
-        case 3: Март
-        case 4: Апрель
-        case 5: Май
-            console.log('Сезон: Весна');
+        case 3:
+        case 4:
+        case 5:
+            alert('Весна');
             break;
-        case 6: Июнь
-        case 7: Июль
-        case 8: Август
-            console.log('Сезон: Лето');
+        case 6:
+        case 7:
+        case 8:
+            alert('Лето');
             break;
-        case 9: Сентябрь
-        case 10: Октябрь
-        case 11: Ноябрь
-            console.log('Сезон: Осень');
+        case 9:alert
+        case 10:alert
+        case 11:alert
+            alert('Осень');
             break;
         default: 
         console.log('Ошибка');
