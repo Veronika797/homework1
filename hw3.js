@@ -26,9 +26,17 @@
 //     console.log('Неверно');
 // }
 
-let c = -3;
-if (c > 0 && c < 10) {
+// let c = -3;
+// if (c > 0 && c < 10) {
+//     console.log('Верно');
+// } else {
+//     console.log('Неверно');
+// }
+
+let d = 20;
+let e = 50;
+if (d > 100 || e > 100) {
     console.log('Верно');
 } else {
-    console.log('Неверно');
+ console.log('Неверно');   
 }
