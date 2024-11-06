@@ -33,10 +33,14 @@
 //     console.log('Неверно');
 // }
 
-let d = 120;
-let e = 50;
-if (d > 100 || e > 100) {
-    console.log('Верно');
-} else {
- console.log('Неверно');   
-}
+// let d = 120;
+// let e = 50;
+// if (d > 100 || e > 100) {
+//     console.log('Верно');
+// } else {
+//  console.log('Неверно');   
+// }
+
+let a = '2';
+let b = '3';
+alert(Number(a) + Number(b));
