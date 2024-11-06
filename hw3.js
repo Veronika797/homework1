@@ -41,6 +41,36 @@
 //  console.log('Неверно');   
 // }
 
-let a = '2';
-let b = '3';
-alert(Number(a) + Number(b));
+// let a = '2';
+// let b = '3';
+// alert(Number(a) + Number(b));
+
+let monthNumber = 12;
+if (monthNumber < 1 || monthNumber > 12) {
+    console.log('Введите номер месяца от 1 до 12');
+} else {
+    switch (monthNumber) {
+        case 1: Январь
+        case 2: Февраль
+        case 12: Декабрь
+            console.log('Сезон: Зима');        
+            break;
+        case 3: Март
+        case 4: Апрель
+        case 5: Май
+            console.log('Сезон: Весна');
+            break;
+        case 6: Июнь
+        case 7: Июль
+        case 8: Август
+            console.log('Сезон: Лето');
+            break;
+        case 9: Сентябрь
+        case 10: Октябрь
+        case 11: Ноябрь
+            console.log('Сезон: Осень');
+            break;
+        default: 
+        console.log('Ошибка');
+    }
+}
