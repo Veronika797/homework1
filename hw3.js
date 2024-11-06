@@ -33,7 +33,7 @@
 //     console.log('Неверно');
 // }
 
-let d = 20;
+let d = 120;
 let e = 50;
 if (d > 100 || e > 100) {
     console.log('Верно');
