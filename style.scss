@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;   
+}
+
 body {
     font-family: "Montserrat", system-ui;
     font-weight: 400;
@@ -17,14 +21,16 @@ body {
 }
 
 .header {
+    overflow: hidden;
     position: relative;
     padding-bottom: 156px;
     background-color: #E1FF8F;
     padding-top: 196px;
-    background-image: url(img/Group1597880565.png);
-    background-position: 835px -334px;
-    background-repeat: no-repeat;
+    // background-image: url(img/Group1597880565.png);
+    // background-position: 835px -334px;
+    // background-repeat: no-repeat;
     &__text {
+        max-width: 768px;
         max-width: 768px;
         font-size: 64px;
         font-weight: 700;
@@ -33,6 +39,7 @@ body {
         margin-bottom: 24px;
     }
     &__description {
+        max-width: 768px;
         max-width: 768px;
         font-size: 24px;
         font-weight: 400;
@@ -53,25 +60,36 @@ body {
         white-space: nowrap;
         overflow: hidden;
         padding-left: 17px;
+        white-space: nowrap;
+        overflow: hidden;
         height: 90px;
         background-color: rgb(188, 236, 48);
         display: flex;
+        flex-direction: row;
         gap: 51px;
-        align-items: center;
-        &__game {
+        padding-left: 19px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        &__text {
+            color: rgb(32, 32, 39);
             font-size: 30px;
             font-weight: 700;
-            line-height: 33px;
-            letter-spacing: 0.04em;
+            line-height: 110%;
+            letter-spacing: 4%;
             text-align: left;
             text-transform: uppercase;
         }
-        &__img {
+        &__star {
             width: 36px;
             height: 36px;
         }
     }
 }
+
+    .header-line__text,
+    .header-line__star {
+        display: none;
+    }
 
 .header__button:hover {
     background-color: #fff;
@@ -84,28 +102,43 @@ body {
     color: #000;
 }
 
+.star {
+    position: absolute;
+    top: -50%;
+    left: 58%;
+}
+
 .star1 {
     position: absolute;
-    top: 94px;
-    left: 63px;
+    // top: 94px;
+    // left: 63px;
+    top: 12%;
+    left: 5%;
 }
 
 .star2 {
     position: absolute;
-    top: 69px;
-    left: 156px;
+    // top: 69px;
+    // left: 156px;
+    top: 8%;
+    left: 10%;
 }
 
 .star3 {
+    // position: absolute;
+    // top: 568px;
+    // left: 1013px;
     position: absolute;
-    top: 568px;
-    left: 1013px;
+    top: 80%;
+    left: 70%
 }
 
 .star4 {
     position: absolute;
-    top: 538px;
-    left: 948px;
+    // top: 538px;
+    // left: 948px;
+    top: 75%;
+    left: 65%;
 }
 
 .star7 {
@@ -145,12 +178,18 @@ button {
     background: rgb(32, 32, 39);
 }
 
+
+
 .content {
-    padding-bottom: 144px;
+    position: relative;
+    overflow: hidden;
+    height: 1470px;
     background-color: rgb(32, 32, 39);
-    background-image: url(img/StarBig.png);
-    background-position: 995px 115px;
-    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    // background-image: url(img/StarBig.png);
+    // // background-position: 933px 77px;
+    // background-position: 115% 10%;
+    // background-repeat: no-repeat;
     &__text {
         padding-top: 94px;
         padding-bottom: 24px;
@@ -179,6 +218,7 @@ button {
     }
     &-section {
         display: flex;
+        flex-wrap: wrap;
         gap: 32px;
     }
     &__mini-games {
@@ -248,17 +288,25 @@ button {
 
 .star5 {
     position: absolute;
-    top: 1590px;
-    left: 28px;
+    top: 54%;
+    left: 1%;
 }
 
 .star6 {
     position: absolute;
-    top: 1652px;
-    left: 45px;
+    top: 58%;
+    left: 3%;
+}
+
+.star-big {
+    position: absolute;
+    top: 5%;
+    left: 70%;;
+    transform: rotate(-6.77deg);
 }
 
 .item {
+    z-index: 1;
     text-decoration: none;
     width: 378px;
     display: flex;
@@ -282,6 +330,7 @@ button {
         text-align: left;
         border-radius: 52.58px;
         width: 107px;
+        color: rgb(32, 32, 39);
         background: rgb(247, 247, 247);
         padding: 8px 16px 10px 16px;
     }
