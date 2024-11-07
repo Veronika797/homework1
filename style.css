@@ -114,17 +114,21 @@ body {
   position: absolute;
   left: 89%;
   top: 32%;
+  left: 70%;
+  top: 7%;
   transform: rotate(7.08deg);
 }
 
-.star8 {
+.star5 {
   position: absolute;
   left: 93%;
   top: 33%;
   transform: rotate(5.45deg);
+  top: 54%;
+  left: 1%;
 }
 
-.star9 {
+.star6 {
   position: absolute;
   left: 88%;
   top: 98%;
@@ -134,6 +138,8 @@ body {
   position: absolute;
   left: 93%;
   top: 97%;
+  top: 58%;
+  left: 3%;
 }
 
 button {
@@ -210,6 +216,57 @@ button {
   top: 2%;
   left: 70%;
   transform: rotate(-6.77deg);
+}
+.content__game-name__description {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: rgb(32, 32, 39);
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+.mini-games {
+  display: flex;
+  background-color: white;
+  border-radius: 30px;
+  justify-content: space-between;
+}
+.mini-games__img {
+  width: 100%;
+  height: 100%;
+}
+.mini-games__button {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+.mini-games__text {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78.02px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  padding-bottom: 72px;
+}
+.mini-games__top {
+  padding: 48px;
+}
+.mini-games__box {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+
+.mini-games:hover {
+  transform: scale(1.1);
+}
+
+.mini-games__button:hover {
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
 }
 
 .item {
