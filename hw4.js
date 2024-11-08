@@ -31,13 +31,20 @@
 //     console.log(`${key}: ${obj[key]}`);
 // }
 
-let n = 1000;
-let num = 0;
+// let n = 1000;
+// let num = 0;
 
-do {
-    n /= 2;
-    console.log(n);
-    console.log(num);
-    num++;
+// do {
+//     n /= 2;
+//     console.log(n);
+//     console.log(num);
+//     num++;
+// }
+// while (n >= 50);
+
+let firstFriday = 5;
+const daysInMonth = 31;
+
+for (let day = firstFriday; day <= daysInMonth; day += 7) {
+    console.log('Сегодня пятница, ${day}-е число. Необходимо подготовить отчет.');
 }
-while (n >= 50);
