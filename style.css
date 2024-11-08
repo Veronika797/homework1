@@ -58,32 +58,25 @@ body {
   padding-left: 17px;
   white-space: nowrap;
   overflow: hidden;
+  padding-left: 17px;
   height: 90px;
   background-color: rgb(188, 236, 48);
   display: flex;
-  flex-direction: row;
   gap: 51px;
-  padding-left: 19px;
-  justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 }
-.header-line__text {
+.header-line__game {
   color: rgb(32, 32, 39);
   font-size: 30px;
   font-weight: 700;
-  line-height: 110%;
-  letter-spacing: 4%;
+  line-height: 33px;
+  letter-spacing: 0.04em;
   text-align: left;
   text-transform: uppercase;
 }
-.header-line__star {
+.header-line__img {
   width: 36px;
   height: 36px;
-}
-
-.header-line__text,
-.header-line__star {
-  display: none;
 }
 
 .header__button:hover {
@@ -92,65 +85,68 @@ body {
   cursor: pointer;
 }
 
-.text {
-  text-decoration: none;
-  color: #000;
-}
-
 .star {
   position: absolute;
   top: -50%;
   left: 58%;
 }
-
 .star1 {
   position: absolute;
   top: 12%;
   left: 5%;
 }
-
 .star2 {
   position: absolute;
   top: 8%;
   left: 10%;
 }
-
 .star3 {
   position: absolute;
   top: 80%;
   left: 70%;
 }
-
 .star4 {
   position: absolute;
   top: 75%;
   left: 65%;
 }
-
+.star5 {
+  position: absolute;
+  top: 16%;
+  left: 1%;
+}
+.star6 {
+  position: absolute;
+  top: 17%;
+  left: 3%;
+}
+.star-big {
+  position: absolute;
+  top: 2%;
+  left: 70%;
+  transform: rotate(-6.77deg);
+}
 .star7 {
   position: absolute;
-  left: 1281.33px;
-  top: 2363px;
+  left: 89%;
+  top: 32%;
   transform: rotate(7.08deg);
 }
-
 .star8 {
   position: absolute;
-  left: 1326.54px;
-  top: 2396px;
+  left: 92%;
+  top: 32.5%;
   transform: rotate(5.45deg);
 }
-
 .star9 {
   position: absolute;
-  left: 1249px;
-  top: 4885px;
+  left: 91%;
+  top: 97%;
 }
-
 .star10 {
   position: absolute;
-  left: 1319px;
-  top: 4836px;
+  left: 86%;
+  top: 98%;
 }
 
 button {
@@ -167,9 +163,8 @@ button {
 .content {
   position: relative;
   overflow: hidden;
-  height: 1470px;
+  padding-bottom: 144px;
   background-color: rgb(32, 32, 39);
-  padding-bottom: 50px;
 }
 .content__text {
   padding-top: 94px;
@@ -196,15 +191,18 @@ button {
   flex-wrap: wrap;
   gap: 32px;
   align-items: center;
+  padding-bottom: 50px;
 }
 .content-section {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
 }
+
 .content__mini-games {
   padding-top: 48px;
 }
+
 .content__game-name {
   font-size: 48px;
   font-weight: 700;
@@ -212,7 +210,8 @@ button {
   text-align: left;
   color: rgb(32, 32, 39);
 }
-.content__game-name__description {
+
+.content__description {
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
@@ -254,35 +253,6 @@ button {
   flex-direction: column;
 }
 
-.mini-games:hover {
-  transform: scale(1.1);
-}
-
-.mini-games__button:hover {
-  background-color: #fff;
-  color: black;
-  cursor: pointer;
-}
-
-.star5 {
-  position: absolute;
-  top: 54%;
-  left: 1%;
-}
-
-.star6 {
-  position: absolute;
-  top: 58%;
-  left: 3%;
-}
-
-.star-big {
-  position: absolute;
-  top: 5%;
-  left: 70%;
-  transform: rotate(-6.77deg);
-}
-
 .item {
   z-index: 1;
   text-decoration: none;
@@ -309,7 +279,6 @@ button {
   text-align: left;
   border-radius: 52.58px;
   width: 107px;
-  color: rgb(32, 32, 39);
   background: rgb(247, 247, 247);
   padding: 8px 16px 10px 16px;
 }
@@ -326,9 +295,103 @@ button {
   transform: scale(1.1);
 }
 
+.mini-games {
+  padding-top: 46px;
+  display: flex;
+  flex-direction: column;
+  background: rgb(32, 32, 39);
+}
+.mini-games__img {
+  width: 100%;
+  height: 100%;
+}
+.mini-games__button {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  text-align: center;
+}
+.mini-games__text {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78.02px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  padding-bottom: 72px;
+}
+.mini-games__top {
+  width: 504px;
+  padding: 48px;
+}
+.mini-games__bottom {
+  height: 100%;
+  border-radius: 30px;
+  background: rgb(173, 97, 255);
+}
+.mini-games__box {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+.mini-games__choise {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+}
+.mini-games__name {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.mini-games__description {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-top: 24px;
+  margin-bottom: 36px;
+}
+
+.game2, .game4, .game6 {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.mini-games__button:hover {
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+}
+
 .game {
   height: 314px;
   width: 378px;
+}
+
+.footer {
+  height: 150px;
+  background-color: rgb(189, 237, 53);
+}
+.footer-text {
+  padding-top: 61px;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  display: flex;
+  justify-content: center;
 }
 
 .footer {
