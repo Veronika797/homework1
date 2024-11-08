@@ -179,7 +179,7 @@ button {
         text-align: left;
     }
     &__description {
-        width: 788px;
+        max-width: 788px;
         padding-bottom: 72px;
         color: rgb(255, 255, 255);
         font-size: 24px;
@@ -191,7 +191,7 @@ button {
     &-box {
         display: flex;
         flex-wrap: wrap;
-        gap: 32px;
+        // gap: 32px;
         align-items: center;
         padding-bottom: 50px;
     }
@@ -199,6 +199,13 @@ button {
         display: flex;
         flex-wrap: wrap;
         gap: 32px;
+        align-items: flex-start;
+    }
+    &-section__bottom {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        align-items: flex-end;
     }
 }
 
@@ -212,15 +219,6 @@ button {
     line-height: 58.51px;
     text-align: left;
     color: rgba(32, 32, 39, 1);
-}
-    .content__description {
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 32px;
-        text-align: left;
-        color: rgba(32, 32, 39, 1);
-        padding-top: 24px;
-        padding-bottom: 32px;
 }
 
 .mini-games {
@@ -297,6 +295,18 @@ button {
 
 .item:hover {
     transform: scale(1.1);
+}
+
+.item1, .item3 {
+    height: 473px;
+}
+
+.item2, .item5 {
+    height: 512px;
+}
+
+.item4, .item6 {
+    height: 551px;
 }
 
 .mini-games {
