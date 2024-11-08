@@ -211,16 +211,6 @@ button {
   color: rgb(32, 32, 39);
 }
 
-.content__description {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 32px;
-  text-align: left;
-  color: rgb(32, 32, 39);
-  padding-top: 24px;
-  padding-bottom: 32px;
-}
-
 .mini-games {
   display: flex;
   background-color: white;
