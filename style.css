@@ -177,7 +177,7 @@ button {
   text-align: left;
 }
 .content__description {
-  width: 788px;
+  max-width: 788px;
   padding-bottom: 72px;
   color: rgb(255, 255, 255);
   font-size: 24px;
@@ -189,7 +189,6 @@ button {
 .content-box {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
   align-items: center;
   padding-bottom: 50px;
 }
@@ -197,6 +196,13 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
+  align-items: flex-start;
+}
+.content-section__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: flex-end;
 }
 
 .content__mini-games {
@@ -283,6 +289,18 @@ button {
 
 .item:hover {
   transform: scale(1.1);
+}
+
+.item1, .item3 {
+  height: 473px;
+}
+
+.item2, .item5 {
+  height: 512px;
+}
+
+.item4, .item6 {
+  height: 551px;
 }
 
 .mini-games {
@@ -410,6 +428,7 @@ button {
     background-image: url(img/starMobile.png);
     background-repeat: no-repeat;
     background-position: 290px 0px;
+    padding-top: 149px;
   }
   .header-content {
     text-align: center;
@@ -423,6 +442,7 @@ button {
     font-size: 16px;
     line-height: 19.5px;
     text-align: center;
+    margin-bottom: 36px;
   }
   .header-line {
     gap: 27px;
@@ -440,6 +460,9 @@ button {
     width: 285px;
     font-size: 16px;
     line-height: 22.67px;
+  }
+  .mini-games {
+    display: none;
   }
   .mini-games__box {
     display: flex;
@@ -471,30 +494,61 @@ button {
     display: flex;
     flex-direction: column;
   }
-  .content {
-    padding-bottom: 49px;
+  .item, .game {
+    width: 100%;
   }
-  .content__game-name {
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 39.01px;
-    text-align: left;
+  .content {
+    padding-bottom: 50px;
+  }
+  .content__text {
+    padding-top: 48px;
+    font-size: 40px;
+    padding-bottom: 16px;
   }
   .content__description {
-    width: 284px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.5px;
-    text-align: left;
-    padding-top: 16px;
+    padding-bottom: 48px;
+    padding-top: 0;
   }
-  .star3,
-  .star4,
-  .star7,
-  .star8,
-  .star9,
-  .star10 {
+  .content-box {
+    padding-bottom: 0;
+    gap: 32px;
+  }
+  .star, .star5, .star6, .star-big {
     display: none;
+  }
+  .star1 {
+    position: absolute;
+    top: 13%;
+    left: 12%;
+    height: 35px;
+  }
+  .star2 {
+    position: absolute;
+    top: 7%;
+    left: 25%;
+    height: 21px;
+  }
+  .star3 {
+    position: absolute;
+    top: 90%;
+    left: 80%;
+    height: 41px;
+  }
+  .star4 {
+    top: 627px;
+    left: 253px;
+    position: absolute;
+    height: 18px;
+    top: 85%;
+    left: 72%;
+  }
+  .header__button:hover {
+    background-color: rgb(32, 32, 39);
+    color: #fff;
+    cursor: pointer;
+  }
+  .item:hover {
+    transform: scale(1);
   }
   .footer {
     height: 100px;
@@ -510,39 +564,17 @@ button {
     padding-left: 16px;
     padding-right: 16px;
   }
-  .content-top {
-    display: none;
-  }
   .header {
-    background-image: url(img/starMobile.png);
-    background-repeat: no-repeat;
-    background-position: 220px -5px;
+    background-position: 110% 0%;
   }
-  .header-content {
-    text-align: center;
+  .content-section, .content-section__bottom {
+    width: 343px;
   }
-  .header__text {
-    font-size: 40px;
-    line-height: 48.76px;
-    text-align: center;
+  .game {
+    width: 100%;
   }
-  .header__description {
-    font-size: 16px;
-    line-height: 19.5px;
-    text-align: center;
-    margin-bottom: 36px;
-  }
-  .header-line {
-    gap: 27px;
-    height: 51px;
-  }
-  .header-line__game {
-    font-size: 16px;
-    line-height: 17.6px;
-  }
-  .header-line__img {
-    width: 19.34px;
-    height: 19.34px;
+  .mini-games {
+    display: none;
   }
   .mini-games__box {
     gap: 24px;
@@ -585,22 +617,6 @@ button {
     line-height: 19.5px;
     text-align: left;
     padding-top: 16px;
-  }
-  .star1 {
-    top: 97px;
-    left: 30px;
-  }
-  .star2 {
-    top: 64px;
-    left: 85px;
-  }
-  .star3 {
-    top: 650px;
-    left: 280px;
-  }
-  .star4 {
-    top: 627px;
-    left: 253px;
   }
   .footer {
     height: 100px;
