@@ -12,6 +12,7 @@
         background-image: url(img/starMobile.png);
         background-repeat: no-repeat;
         background-position: 290px 0px;
+        padding-top: 149px;
         &-content {
             text-align: center;
         }
@@ -24,6 +25,7 @@
             font-size: 16px;
             line-height: 19.5px;
             text-align: center;
+            margin-bottom: 36px;
         }
         &-line {
             gap: 27px;
@@ -44,6 +46,10 @@
         }
     }
     
+    .mini-games {
+        display: none;
+    }
+
         .mini-games {
             &__box {
                 display: flex;
@@ -78,32 +84,80 @@
             display: flex;
             flex-direction: column;
         }
+
+       .item, .game {
+        width: 100%
+       }
         
         .content {
-            padding-bottom: 49px;
-            &__game-name {
-                font-size: 32px;
-                font-weight: 700;
-                line-height: 39.01px;
-                text-align: left;
+            padding-bottom: 50px;
+            &__text {
+                padding-top: 48px;
+                font-size: 40px;
+                padding-bottom: 16px;
             }
             &__description {
-                width: 284px;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 19.5px;
-                text-align: left;
-                padding-top: 16px;
+                padding-bottom: 48px;
+                padding-top: 0;
+            }
+            &-box {
+                padding-bottom: 0;
+                gap: 32px;
             }
         }
 
-        .star3,
-        .star4,
-        .star7,
-        .star8,
-        .star9, 
-        .star10 {
+        .star, .star5, .star6, .star-big {
             display: none;
+        }
+
+        .star1 {
+            position: absolute;
+            top: 13%;
+            left: 12%;
+            height: 35px;
+        }
+
+        .star2 {
+            position: absolute;
+            top: 7%;
+            left: 25%;
+            height: 21px;
+        }
+
+        .star3 {
+            position: absolute;
+            top: 90%;
+            left: 80%;
+            height: 41px;
+        }
+
+        .star4 {
+            top: 627px;
+            left: 253px;
+            position: absolute;
+            height: 18px;
+            top: 85%;
+            left: 72%;
+        }
+
+
+        // .star3,
+        // .star4,
+        // .star7,
+        // .star8,
+        // .star9, 
+        // .star10 {
+        //     display: none;
+        // }
+
+        .header__button:hover {
+            background-color: rgb(32, 32, 39);;
+            color: #fff;
+            cursor: pointer; ;
+        }
+
+        .item:hover {
+            transform: scale(1);
         }
     
         .footer {
@@ -123,62 +177,45 @@
         padding-right: 16px;
     }
 
-    .content-top {
-        display: none;
-    }
+    // .content-top {
+    //     display: none;
+    // }
 
     .header {
-        background-image: url(img/starMobile.png);
-        background-repeat: no-repeat;
-        background-position: 220px -5px;
-        &-content {
-            text-align: center;
+        background-position: 110% 0%;
+    }
+
+    .content-section, .content-section__bottom {
+        width: 343px;
+    }
+
+    .game {
+        width: 100%;
+    }
+
+    .mini-games {
+        display: none;
+    }
+    
+    .mini-games {
+        &__box {
+            gap: 24px;
         }
         &__text {
             font-size: 40px;
+            font-weight: 700;
             line-height: 48.76px;
-            text-align: center;
+            text-align: left;
+            padding-bottom: 48px;
         }
-        &__description {
+        &__top {
+            padding-left: 29px;
+        }
+        &__button {
             font-size: 16px;
-            line-height: 19.5px;
-            text-align: center;
-            margin-bottom: 36px;
-        }
-        &-line {
-            gap: 27px;
-            height: 51px;
-        }
-        &-line__game {
-            font-size: 16px;
-            line-height: 17.6px;
-        }
-        &-line__img {
-            width: 19.34px;
-            height: 19.34px;
         }
     }
-    
-        .mini-games {
-            &__box {
-                gap: 24px;
-            }
-            &__text {
-                font-size: 40px;
-                font-weight: 700;
-                line-height: 48.76px;
-                text-align: left;
-                padding-bottom: 48px;
-            }
-            &__top {
-                padding-left: 29px;
-            }
-            &__button {
-                font-size: 16px;
-            }
-        }
       
-    
         .game1, 
         .game3,
         .game5 {
@@ -208,26 +245,7 @@
             }
         }
     
-        .star1 {
-            top: 97px;
-            left: 30px;
-        }
-
-        .star2 {
-            top: 64px;
-            left: 85px;
-        }
-
-        .star3 {
-            top: 650px;
-            left: 280px;
-        }
-
-        .star4 {
-            top: 627px;
-            left: 253px;
-        }
-
+       
         .footer {
             height: 100px;
             &-text {
