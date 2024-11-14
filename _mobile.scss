@@ -46,30 +46,57 @@
         }
     }
     
-    .mini-games {
-        display: none;
+    // .mini-games {
+    //     display: none;
+    // }
+
+.mini-games {
+    padding-top: 46px;;
+        &__box {
+            display: flex;
+            gap: 32px;
+        }
+        &__text {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 48.76px;
+            text-align: left;
+            padding-bottom: 48px;
+        }
+        &__top {
+            padding: 29px 29px 32px 29px;
+        }
+        &__button {
+            width: 285px;
+            font-size: 16px;
+        }
+        &__choise {
+            height: auto;
+            width: 100%;
+            gap: 0;
+        }
+        &__name {
+            width: 285px;
+            font-size: 32px;
+            line-height: 39.01px;
+            text-align: left;
+        }
+        &__description {
+            width: 285px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.5px;
+            margin-top: 16px;
+            margin-bottom: 32px;
+        }
+        &__bottom {
+            width: 100%;
+        }
     }
 
-        .mini-games {
-            &__box {
-                display: flex;
-                gap: 32px;
-            }
-            &__text {
-                font-size: 40px;
-                font-weight: 700;
-                line-height: 48.76px;
-                text-align: left;
-                padding-bottom: 48px;
-            }
-            &__top {
-                padding-top: 29px;
-                padding-bottom: 32px;
-            }
-            &__button {
-                width: 285px;
-            }
-        }
+    .mini-games__choise:hover {
+        transform: scale(1);
+    }
       
         .game1, 
         .game3,
@@ -143,12 +170,12 @@
 
         // .star3,
         // .star4,
-        // .star7,
-        // .star8,
-        // .star9, 
-        // .star10 {
-        //     display: none;
-        // }
+        .star7,
+        .star8,
+        .star9, 
+        .star10 {
+            display: none;
+        }
 
         .header__button:hover {
             background-color: rgb(32, 32, 39);;
@@ -191,10 +218,6 @@
 
     .game {
         width: 100%;
-    }
-
-    .mini-games {
-        display: none;
     }
     
     .mini-games {

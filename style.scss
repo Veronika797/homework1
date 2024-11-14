@@ -269,8 +269,6 @@ button {
     }
 }
 
-
-
 .mini-games {
     padding-top: 46px;
     display: flex;
@@ -302,13 +300,12 @@ button {
         padding-bottom: 72px;
     }
     &__top {
-        width: 504px;
+        max-width: 504px;
         padding: 48px;
     }
     &__bottom {
         height: 100%;
         border-radius: 30px;
-        background: rgb(173, 97, 255);
     }
     &__box {
         display: flex;
@@ -345,6 +342,24 @@ button {
         text-align: left;
         margin-top: 24px;
         margin-bottom: 36px;
+    }
+}
+
+.bgr {
+    &1 {
+        background: rgb(173, 97, 255);
+    }
+    &2 {
+        background: rgb(253, 173, 0);
+    }
+    &3 {
+        background: rgb(86, 94, 239);
+    }
+    &4 {
+        background: rgb(153, 209, 0);
+    }
+    &5, &6 {
+        background: rgb(39, 26, 88);
     }
 }
 
