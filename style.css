@@ -78,7 +78,6 @@ body {
   width: 36px;
   height: 36px;
 }
-
 .header__button:hover {
   background-color: #fff;
   color: black;
@@ -204,49 +203,15 @@ button {
   gap: 32px;
   align-items: flex-end;
 }
-
 .content__mini-games {
   padding-top: 48px;
 }
-
 .content__game-name {
   font-size: 48px;
   font-weight: 700;
   line-height: 58.51px;
   text-align: left;
   color: rgb(32, 32, 39);
-}
-
-.mini-games {
-  display: flex;
-  background-color: white;
-  border-radius: 30px;
-  justify-content: space-between;
-}
-.mini-games__img {
-  width: 100%;
-  height: 100%;
-}
-.mini-games__button {
-  font-size: 24px;
-  font-weight: 600;
-  color: rgb(255, 255, 255);
-}
-.mini-games__text {
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 78.02px;
-  text-align: left;
-  color: rgb(255, 255, 255);
-  padding-bottom: 72px;
-}
-.mini-games__top {
-  padding: 48px;
-}
-.mini-games__box {
-  display: flex;
-  gap: 32px;
-  flex-direction: column;
 }
 
 .item {
@@ -286,19 +251,15 @@ button {
   letter-spacing: 0px;
   text-align: left;
 }
-
 .item:hover {
   transform: scale(1.1);
 }
-
 .item1, .item3 {
   height: 473px;
 }
-
 .item2, .item5 {
   height: 512px;
 }
-
 .item4, .item6 {
   height: 551px;
 }
@@ -320,6 +281,11 @@ button {
   font-weight: 600;
   line-height: 141.69%;
   text-align: center;
+}
+.mini-games__button:hover {
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
 }
 .mini-games__text {
   font-size: 64px;
@@ -354,6 +320,10 @@ button {
   box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
   background: rgb(255, 255, 255);
 }
+.mini-games__choise:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
 .mini-games__name {
   font-size: 48px;
   font-weight: 700;
@@ -371,35 +341,14 @@ button {
   margin-bottom: 36px;
 }
 
-.game2, .game4, .game6 {
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 10px;
-}
-
-.mini-games__button:hover {
-  background-color: #fff;
-  color: black;
-  cursor: pointer;
-}
-
 .game {
   height: 314px;
   width: 378px;
 }
-
-.footer {
-  height: 150px;
-  background-color: rgb(189, 237, 53);
-}
-.footer-text {
-  padding-top: 61px;
-  color: rgb(0, 0, 0);
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 29px;
-  display: flex;
-  justify-content: center;
+.game2, .game4, .game6 {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .footer {
