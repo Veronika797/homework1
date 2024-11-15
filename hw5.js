@@ -51,15 +51,28 @@
 // console.log(n2);
 
 // задача 4
-function ageUser() {
-    const age = prompt('Сколько Вам лет?');
-    const ageNumber = Number(age);
-    if (ageNumber < 0) {
-        console.log('Вы ввели неправильное значение');
-    } else if (age >= 0 && ageNumber <= 12) {
-        console.log('Привет, друг!');
+// function ageUser() {
+//     const age = prompt('Сколько Вам лет?');
+//     const ageNumber = Number(age);
+//     if (ageNumber < 0) {
+//         console.log('Вы ввели неправильное значение');
+//     } else if (age >= 0 && ageNumber <= 12) {
+//         console.log('Привет, друг!');
+//     }
+//     else if (ageNumber >= 13)
+//         console.log('Добро пожаловать!');
+// }
+// ageUser();
+
+// задача 5
+function checkNumber(a, b) {
+    const num1 = Number(a);
+    const num2 = Number(b);
+    if (isNaN(num1) || isNaN(num2)) {
+        console.log('Одно или оба значения не являются числом');
+    } else {
+        console.log('Оба значения являются числом');
     }
-    else if (ageNumber >= 13)
-        console.log('Добро пожаловать!');
 }
-ageUser();
+checkNumber(1, 51);
+checkNumber(tt, 8);
