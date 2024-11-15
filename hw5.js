@@ -27,8 +27,15 @@
 // console.log(min(6, 6));
 
 // задача 2
-function checkNum(n) {
-    return n % 2 === 0 ? 'Число четное' : 'Число нечетное';
+// function checkNum(n) {
+//     return n % 2 === 0 ? 'Число четное' : 'Число нечетное';
+// }
+// console.log(checkNum(4));
+// console.log(checkNum(5));
+
+// задача 3
+function squareNum(n) {
+    console.log(n * n);
 }
-console.log(checkNum(4));
-console.log(checkNum(5));
+squareNum(5);
+squareNum(7);
