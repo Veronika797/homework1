@@ -33,9 +33,19 @@
 // console.log(checkNum(4));
 // console.log(checkNum(5));
 
-// задача 3
-function squareNum(n) {
-    console.log(n * n);
+// задача 3.1
+// function squareNum(n) {
+//     console.log(n * n);
+// }
+// squareNum(5);
+// squareNum(7);
+
+// задача 3.2
+function returnSquare(n) {
+    return n * n;
 }
-squareNum(5);
-squareNum(7);
+const n1 = returnSquare(3);
+console.log(n1);
+
+const n2 = returnSquare(9);
+console.log(n2);
