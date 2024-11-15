@@ -65,14 +65,47 @@
 // ageUser();
 
 // задача 5
-function checkNumber(a, b) {
-    const num1 = Number(a);
-    const num2 = Number(b);
-    if (isNaN(num1) || isNaN(num2)) {
-        console.log('Одно или оба значения не являются числом');
-    } else {
-        console.log('Оба значения являются числом');
+// function checkNumber(a, b) {
+//     const num1 = Number(a);
+//     const num2 = Number(b);
+//     if (isNaN(num1) || isNaN(num2)) {
+//         console.log('Одно или оба значения не являются числом');
+//     } else {
+//         console.log('Оба значения являются числом');
+//     }
+// }
+// checkNumber(1, 51);
+// checkNumber(tt, 8);
+
+// // задача 6 под вопросом
+// function ranNum() {
+//         const num = prompt('Введите любое число');
+//         const number = Number(num);
+//         if (isNaN(number)) {
+//             return 'Переданный параметр не является числом';
+//         } else {
+//             const cubeNum = Math.pow(number, 7);
+//             return `${number} в кубе равняется ${cubeNum}`;
+//         }
+// }
+// for (let i = 0; i <= 10; i++) {
+// console.log(ranNum());
+// }
+
+// задача 7 под вопросом
+const circle1 = {
+    radius: l,
+    getArea() {
+        return Mаth.PI * (this.radius ** 2);
+    },
+    getPerimeter() {
+        return C = 2 * π * l;
     }
 }
-checkNumber(1, 51);
-checkNumber(tt, 8);
+const circle1 = circle(2);
+const circle2 = circle(5);
+
+console.log(`Площадь circle1: ${circle1.getArea()}`);
+console.log(`Периметр circle1: ${circle1.getPerimeter()}`);
+console.log(`Площадь circle2: ${circle2.getArea()}`);
+console.log(`Периметр circle2: ${circle2.getPerimeter()}`);
