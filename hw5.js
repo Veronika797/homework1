@@ -20,8 +20,15 @@
 // guessNumber();
 
 // задача 1
-function min(a, b) {
-    return a < b ? a : b;
+// function min(a, b) {
+//     return a < b ? a : b;
+// }
+// console.log(min(8, 4));
+// console.log(min(6, 6));
+
+// задача 2
+function checkNum(n) {
+    return n % 2 === 0 ? 'Число четное' : 'Число нечетное';
 }
-console.log(min(8, 4));
-console.log(min(6, 6));
+console.log(checkNum(4));
+console.log(checkNum(5));
