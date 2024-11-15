@@ -41,11 +41,25 @@
 // squareNum(7);
 
 // задача 3.2
-function returnSquare(n) {
-    return n * n;
-}
-const n1 = returnSquare(3);
-console.log(n1);
+// function returnSquare(n) {
+//     return n * n;
+// }
+// const n1 = returnSquare(3);
+// console.log(n1);
 
-const n2 = returnSquare(9);
-console.log(n2);
+// const n2 = returnSquare(9);
+// console.log(n2);
+
+// задача 4
+function ageUser() {
+    const age = prompt('Сколько Вам лет?');
+    const ageNumber = Number(age);
+    if (ageNumber < 0) {
+        console.log('Вы ввели неправильное значение');
+    } else if (age >= 0 && ageNumber <= 12) {
+        console.log('Привет, друг!');
+    }
+    else if (ageNumber >= 13)
+        console.log('Добро пожаловать!');
+}
+ageUser();
