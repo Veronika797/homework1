@@ -1,23 +1,23 @@
 // домашнее задание
-// const randomNumber = Math.floor(Math.random() * 100) + 1;
-// function guessNumber() {
-//     let userGuess = prompt('Угадай число от 1 до 100');
-//     userGuess = Number(userGuess);
-//     if (userGuess === randomNumber) {
-//         alert('Верно! Ты отгадал число');
-//     } else if (userGuess < randomNumber) {
-//         alert('Загаданное число больше. Попытай удачу еще раз');
-//         guessNumber();
-//     }
-//     else if (userGuess > randomNumber) {
-//         alert('Загаданное число меньше. Попытай удачу еще раз');
-//         guessNumber();
-//     }
-//     else {
-//         alert('Попытай удачу еще раз');
-//     }
-// }
-// guessNumber();
+const randomNumber = Math.floor(Math.random() * 100) + 1;
+function guessNumber() {
+    let userGuess = prompt('Угадай число от 1 до 100');
+    userGuess = Number(userGuess);
+    if (userGuess === randomNumber) {
+        alert('Верно! Ты отгадал число');
+    } else if (userGuess < randomNumber) {
+        alert('Загаданное число больше. Попытай удачу еще раз');
+        guessNumber();
+    }
+    else if (userGuess > randomNumber) {
+        alert('Загаданное число меньше. Попытай удачу еще раз');
+        guessNumber();
+    }
+    else {
+        alert('Попытай удачу еще раз');
+    }
+}
+guessNumber();
 
 // задача 1
 // function min(a, b) {
@@ -77,35 +77,41 @@
 // checkNumber(1, 51);
 // checkNumber(tt, 8);
 
-// // задача 6 под вопросом
-function ranNum() {
-        const num = prompt('Введите любое число');
-        const number = Number(num);
-        if (isNaN(number)) {
-            return 'Переданный параметр не является числом';
-        } else {
-            const cubeNum = Math.pow(number, 3);
-            return `${number} в кубе равняется ${cubeNum}`;
-        }
-}
-for (let i = 0; i <= 10; i++) {
-console.log(ranNum());
-}
-
-// задача 7 под вопросом
-// const circle1 = {
-//     radius: l,
-//     getArea() {
-//         return Mаth.PI * (this.radius ** 2);
-//     },
-//     getPerimeter() {
-//         return C = 2 * π * l;
-//     }
+// // задача 6 
+// function ranNum() {
+//         const num = prompt('Введите любое число');
+//         const number = Number(num);
+//         if (isNaN(number)) {
+//             return 'Переданный параметр не является числом';
+//         } else {
+//             const cubeNum = Math.pow(number, 3);
+//             return `${number} в кубе равняется ${cubeNum}`;
+//         }
 // }
-// const circle1 = circle(2);
-// const circle2 = circle(5);
+// for (let i = 0; i <= 10; i++) {
+// console.log(ranNum());
+// }
 
-// console.log(`Площадь circle1: ${circle1.getArea()}`);
-// console.log(`Периметр circle1: ${circle1.getPerimeter()}`);
-// console.log(`Площадь circle2: ${circle2.getArea()}`);
-// console.log(`Периметр circle2: ${circle2.getPerimeter()}`);
+// задача 7
+    const circle1 = {
+        radius: 3,
+        getArea: function() {
+            return Math.PI * this.radius * this.radius;
+        },
+        getPerimeter: function() {
+            return 2 * Math.PI * this.radius;
+        }
+    };
+    const circle2 = {
+        radius: 5,
+        getArea: function() {
+            return Math.PI * this.radius * this.radius;
+        },
+        getPerimeter: function() {
+            return 2 * Math.PI * this.radius;
+        }
+    };
+console.log(`Радиус circle1: ${circle1.radius}, Площадь: ${circle1.getArea().toFixed(2)}`);
+console.log(`Радиус circle2: ${circle2.radius}, Площадь: ${circle2.getArea().toFixed(2)}`);
+console.log(`Радиус circle1: ${circle1.radius}, Периметр: ${circle1.getPerimeter().toFixed(2)}`);
+console.log(`Радиус circle2: ${circle2.radius}, Периметр: ${circle2.getPerimeter().toFixed(2)}`);
