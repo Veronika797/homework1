@@ -82,6 +82,7 @@ body {
   background-color: #fff;
   color: black;
   cursor: pointer;
+  transition: 1s;
 }
 
 .star {
@@ -253,6 +254,7 @@ button {
 }
 .item:hover {
   transform: scale(1.1);
+  transition: 1.2s;
 }
 .item1, .item3 {
   height: 473px;
@@ -286,6 +288,7 @@ button {
   background-color: #fff;
   color: black;
   cursor: pointer;
+  transition: 1s;
 }
 .mini-games__text {
   font-size: 64px;
@@ -322,6 +325,7 @@ button {
 .mini-games__choise:hover {
   transform: scale(1.1);
   cursor: pointer;
+  transition: 1.2s;
 }
 .mini-games__name {
   font-size: 48px;
