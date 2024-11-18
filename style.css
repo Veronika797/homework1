@@ -82,6 +82,7 @@ body {
   background-color: #fff;
   color: black;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .star {
@@ -253,6 +254,7 @@ button {
 }
 .item:hover {
   transform: scale(1.1);
+  transition: 1.2s;
 }
 .item1, .item3 {
   height: 473px;
@@ -286,6 +288,7 @@ button {
   background-color: #fff;
   color: black;
   cursor: pointer;
+  transition: 0.5s;
 }
 .mini-games__text {
   font-size: 64px;
@@ -296,13 +299,12 @@ button {
   padding-bottom: 72px;
 }
 .mini-games__top {
-  width: 504px;
+  max-width: 504px;
   padding: 48px;
 }
 .mini-games__bottom {
   height: 100%;
   border-radius: 30px;
-  background: rgb(173, 97, 255);
 }
 .mini-games__box {
   display: flex;
@@ -323,6 +325,7 @@ button {
 .mini-games__choise:hover {
   transform: scale(1.1);
   cursor: pointer;
+  transition: 1.2s;
 }
 .mini-games__name {
   font-size: 48px;
@@ -339,6 +342,22 @@ button {
   text-align: left;
   margin-top: 24px;
   margin-bottom: 36px;
+}
+
+.bgr1 {
+  background: rgb(173, 97, 255);
+}
+.bgr2 {
+  background: rgb(253, 173, 0);
+}
+.bgr3 {
+  background: rgb(86, 94, 239);
+}
+.bgr4 {
+  background: rgb(153, 209, 0);
+}
+.bgr5, .bgr6 {
+  background: rgb(39, 26, 88);
 }
 
 .game {
@@ -411,7 +430,7 @@ button {
     line-height: 22.67px;
   }
   .mini-games {
-    display: none;
+    padding-top: 46px;
   }
   .mini-games__box {
     display: flex;
@@ -425,11 +444,36 @@ button {
     padding-bottom: 48px;
   }
   .mini-games__top {
-    padding-top: 29px;
-    padding-bottom: 32px;
+    padding: 29px 29px 32px 29px;
   }
   .mini-games__button {
     width: 285px;
+    font-size: 16px;
+  }
+  .mini-games__choise {
+    height: auto;
+    width: 100%;
+    gap: 0;
+  }
+  .mini-games__name {
+    width: 285px;
+    font-size: 32px;
+    line-height: 39.01px;
+    text-align: left;
+  }
+  .mini-games__description {
+    width: 285px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+  .mini-games__bottom {
+    width: 100%;
+  }
+  .mini-games__choise:hover {
+    transform: scale(1);
   }
   .game1,
   .game3,
@@ -491,6 +535,12 @@ button {
     top: 85%;
     left: 72%;
   }
+  .star7,
+  .star8,
+  .star9,
+  .star10 {
+    display: none;
+  }
   .header__button:hover {
     background-color: rgb(32, 32, 39);
     color: #fff;
@@ -521,9 +571,6 @@ button {
   }
   .game {
     width: 100%;
-  }
-  .mini-games {
-    display: none;
   }
   .mini-games__box {
     gap: 24px;
