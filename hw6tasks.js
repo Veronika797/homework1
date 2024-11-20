@@ -9,5 +9,5 @@
 
 // задача 2
 const array = [1, 5, 4, 10, 0, 3];
-console.log(array.length);
-console.log(array[4]);
+const index = array.indexOf(4);
+console.log(index);
