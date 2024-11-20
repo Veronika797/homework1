@@ -57,6 +57,13 @@
 
 
 // задача 9
-const longArray = [[1, 2, 3],[4, 5, 6]];
-const shortArray = [...longArray[0], ...longArray[1]];
-console.log(shortArray);
+// const longArray = [[1, 2, 3],[4, 5, 6]];
+// const shortArray = [...longArray[0], ...longArray[1]];
+// console.log(shortArray);
+
+// задача 10
+const randomNumber = [1, 6, 7, 3, 9, 2];
+for (let i=0; i < randomNumber.length - 1; i++) {
+    const sum = randomNumber[i] + randomNumber[i + 1];
+    console.log(`Сумма ${randomNumber[i]} + ${randomNumber[i + 1]} : ${sum}`);
+}
