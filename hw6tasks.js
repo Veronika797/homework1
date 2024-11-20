@@ -75,7 +75,13 @@
 // console.log(square([2, 5, 7]));
 
 // задача 12
-function getLength(arr) {
-    return arr.map(item => item.length);
+// function getLength(arr) {
+//     return arr.map(item => item.length);
+// }
+// console.log(getLength(['hello', 'my', 'friend']));
+
+// задача 13
+function filterArray(number) {
+    return number.filter(item => item < 0);
 }
-console.log(getLength(['hello', 'my', 'friend']));
+console.log(filterArray([1, 3, -2, 9, -7, -3, 9, 5]));
