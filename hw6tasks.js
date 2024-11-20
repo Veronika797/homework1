@@ -42,10 +42,15 @@
 // console.log(filteredArray);
 
 // задача 7
-let array = [9, 8, 7, 6, 5];
-const userNum = prompt("Угадайте число от 5 до 9");
-if (array.includes(Number(userNum))) {
-    alert("Угадал");
-} else {
-    alert("Не угадал");
-}
+// let array = [9, 8, 7, 6, 5];
+// const userNum = prompt("Угадайте число от 5 до 9");
+// if (array.includes(Number(userNum))) {
+//     alert("Угадал");
+// } else {
+//     alert("Не угадал");
+// }
+
+// задача 8
+let line = 'abcdef';
+let newLine = line.split('').reverse().join('');
+console.log(newLine);
