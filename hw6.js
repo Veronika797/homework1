@@ -47,46 +47,6 @@
 // }
 
 
-// function generateTasks(min, max) {
-//     const operators = ['+', '-', '*', '/'];
-//     const num1 = Math.floor(Math.random() * (max - min + 1)) + min;
-//     const num2 = Math.floor(Math.random() * (max - min + 1)) + min;
-//     let operator = operators[Math.floor(Math.random() * operators.length)];
-//     if (operator === '/' && num2 === 0) {
-//         num2 = 1;
-//     }
-//     const randomTasks = `${num1} ${operator} ${num2}`;
-//     alert(randomTasks);
-//     let answer = prompt(Math.floor(parseFloat(`Посчитай и напиши ответ: ${randomTasks}`)));
-//     switch (operator) {
-//         case '+':
-//             answer = num1 + num2;
-//             break;
-//         case '-':
-//             answer = num1 - num2;
-//             break;
-//         case '*':
-//             answer = num1 * num2;
-//             break;
-//         case '/':
-//            answer = num1 / num2;
-//             break;
-//         default:
-//             alert('Не правильный оператор');
-//             return;
-//     } 
-//     if(randomTasks === answer) {
-//         alert('Ответ верный');
-//     }
-//     else {
-//         alert('Ошибка');
-//     }
-//     generateTasks(1, 100);
-// }
-
-
-
-
 function generateTasks(min, max) {
     const operators = ['+', '-', '*', '/'];
     const num1 = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -97,31 +57,72 @@ function generateTasks(min, max) {
     }
     const randomTasks = `${num1} ${operator} ${num2}`;
     alert(randomTasks);
-    let answer = prompt(`Посчитай и напиши ответ: ${randomTasks}`);
-    answer = parseFloat(answer);
+    let answer;
     switch (operator) {
         case '+':
-            correctAnswer = num1 + num2;
+            answer = num1 + num2;
             break;
         case '-':
-            correctAnswer = num1 - num2;
+            answer = num1 - num2;
             break;
         case '*':
-            correctAnswer = num1 * num2;
+            answer = num1 * num2;
             break;
         case '/':
-           correctAnswer = num1 / num2;
+           answer = num1 / num2;
             break;
         default:
             alert('Не правильный оператор');
             return;
     } 
-    if(correctAnswer === answer) {
+    let userAnswer = prompt(`Посчитай и напиши ответ: ${randomTasks}`);
+    if(parseFloat(userAnswer) === answer) {
         alert('Ответ верный');
     }
     else {
         alert('Ошибка');
     }
-    generateTasks(1, 5);
+    generateTasks(10, 5);
 }
-// generateTasks(1, 100);
+
+
+
+
+// function generateTasks(min, max) {
+//     const operators = ['+', '-', '*', '/'];
+//     const num1 = Math.floor(Math.random() * (max - min + 1)) + min;
+//     const num2 = Math.floor(Math.random() * (max - min + 1)) + min;
+//     let operator = operators[Math.floor(Math.random() * operators.length)];
+//     if (operator === '/' && num2 === 0) {
+//         num2 = 1;
+//     }
+//     const randomTasks = `${num1} ${operator} ${num2}`;
+//     alert(randomTasks);
+//     let answer = prompt(`Посчитай и напиши ответ: ${randomTasks}`);
+//     answer = parseFloat(answer);
+//     switch (operator) {
+//         case '+':
+//             correctAnswer = num1 + num2;
+//             break;
+//         case '-':
+//             correctAnswer = num1 - num2;
+//             break;
+//         case '*':
+//             correctAnswer = num1 * num2;
+//             break;
+//         case '/':
+//            correctAnswer = num1 / num2;
+//             break;
+//         default:
+//             alert('Не правильный оператор');
+//             return;
+//     } 
+//     if(correctAnswer === answer) {
+//         alert('Ответ верный');
+//     }
+//     else {
+//         alert('Ошибка');
+//     }
+//     generateTasks(1, 5);
+// }
+// // generateTasks(1, 100);

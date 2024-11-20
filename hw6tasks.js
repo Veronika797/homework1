@@ -51,6 +51,9 @@
 // }
 
 // задача 8
-let line = 'abcdef';
-let newLine = line.split('').reverse().join('');
-console.log(newLine);
+// let line = 'abcdef';
+// let newLine = line.split('').reverse().join('');
+// console.log(newLine);
+
+
+// задача 9
