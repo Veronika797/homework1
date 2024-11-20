@@ -29,6 +29,14 @@
 // console.log(multArray);
 
 // задача 5
-let array = [1, 1, 1];
-array.push(2, 2, 2);
+// let array = [1, 1, 1];
+// array.push(2, 2, 2);
+// console.log(array);
+
+
+// задача 6
+let array = [9, 8, 7, 'a', 6, 5];
+array.sort();
 console.log(array);
+const filteredArray = array.filter(item => item !== 'a');
+console.log(filteredArray);
