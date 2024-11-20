@@ -18,12 +18,17 @@
 // console.log(joinArray);
 
 // задача 4
-const multArray = [];
-for (let i = 0; i < 3; i++) {
-    const newArray = [];
-    for (let c = 0; c < 3; c++) {
-        newArray.push(1);
-    }
-    multArray.push(newArray);
-}
-console.log(multArray);
+// const multArray = [];
+// for (let i = 0; i < 3; i++) {
+//     const newArray = [];
+//     for (let c = 0; c < 3; c++) {
+//         newArray.push(1);
+//     }
+//     multArray.push(newArray);
+// }
+// console.log(multArray);
+
+// задача 5
+let array = [1, 1, 1];
+array.push(2, 2, 2);
+console.log(array);
