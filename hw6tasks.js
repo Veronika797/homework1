@@ -86,7 +86,7 @@
 // }
 // console.log(filterArray([1, 3, -2, 9, -7, -3, 9, 5]));
 
-// задача 13
+// задача 14
 function randomArray() {
     return Math.floor(Math.random() * 10);
 }
@@ -103,3 +103,5 @@ for (let i = 0; i < arr.length; i++) {
     }
 }
 console.log(evenArray);
+
+// задача 15
