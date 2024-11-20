@@ -57,3 +57,6 @@
 
 
 // задача 9
+const longArray = [[1, 2, 3],[4, 5, 6]];
+const shortArray = [...longArray[0], ...longArray[1]];
+console.log(shortArray);
