@@ -62,8 +62,14 @@
 // console.log(shortArray);
 
 // задача 10
-const randomNumber = [1, 6, 7, 3, 9, 2];
-for (let i=0; i < randomNumber.length - 1; i++) {
-    const sum = randomNumber[i] + randomNumber[i + 1];
-    console.log(`Сумма ${randomNumber[i]} + ${randomNumber[i + 1]} : ${sum}`);
+// const randomNumber = [1, 6, 7, 3, 9, 2];
+// for (let i=0; i < randomNumber.length - 1; i++) {
+//     const sum = randomNumber[i] + randomNumber[i + 1];
+//     console.log(`Сумма ${randomNumber[i]} + ${randomNumber[i + 1]} : ${sum}`);
+// }
+
+// задача 11
+function square(arr) {
+    return arr.map(item => item ** 2);
 }
+console.log(square([2, 5, 7]));
