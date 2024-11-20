@@ -69,7 +69,13 @@
 // }
 
 // задача 11
-function square(arr) {
-    return arr.map(item => item ** 2);
+// function square(arr) {
+//     return arr.map(item => item ** 2);
+// }
+// console.log(square([2, 5, 7]));
+
+// задача 12
+function getLength(arr) {
+    return arr.map(item => item.length);
 }
-console.log(square([2, 5, 7]));
+console.log(getLength(['hello', 'my', 'friend']));
