@@ -81,7 +81,25 @@
 // console.log(getLength(['hello', 'my', 'friend']));
 
 // задача 13
-function filterArray(number) {
-    return number.filter(item => item < 0);
+// function filterArray(number) {
+//     return number.filter(item => item < 0);
+// }
+// console.log(filterArray([1, 3, -2, 9, -7, -3, 9, 5]));
+
+// задача 13
+function randomArray() {
+    return Math.floor(Math.random() * 10);
 }
-console.log(filterArray([1, 3, -2, 9, -7, -3, 9, 5]));
+const arr = [];
+for (let i = 0; i < 10; i++) {
+    arr.push(randomArray());
+}
+console.log(arr);
+
+const evenArray = [];
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+        evenArray.push(arr[i]);
+    }
+}
+console.log(evenArray);
