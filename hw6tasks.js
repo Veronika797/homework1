@@ -87,21 +87,30 @@
 // console.log(filterArray([1, 3, -2, 9, -7, -3, 9, 5]));
 
 // задача 14
+// function randomArray() {
+//     return Math.floor(Math.random() * 10);
+// }
+// const arr = [];
+// for (let i = 0; i < 10; i++) {
+//     arr.push(randomArray());
+// }
+// console.log(arr);
+
+// const evenArray = [];
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 === 0) {
+//         evenArray.push(arr[i]);
+//     }
+// }
+// console.log(evenArray);
+
+// задача 15
 function randomArray() {
-    return Math.floor(Math.random() * 10);
+    return Math.floor(Math.random() * 6);
 }
 const arr = [];
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 6; i++) {
     arr.push(randomArray());
 }
 console.log(arr);
-
-const evenArray = [];
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 === 0) {
-        evenArray.push(arr[i]);
-    }
-}
-console.log(evenArray);
-
-// задача 15
+console.log(arr.reduce((a, b) => a + b) / arr.length);
