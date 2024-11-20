@@ -35,8 +35,17 @@
 
 
 // задача 6
-let array = [9, 8, 7, 'a', 6, 5];
-array.sort();
-console.log(array);
-const filteredArray = array.filter(item => item !== 'a');
-console.log(filteredArray);
+// let array = [9, 8, 7, 'a', 6, 5];
+// array.sort();
+// console.log(array);
+// const filteredArray = array.filter(item => item !== 'a');
+// console.log(filteredArray);
+
+// задача 7
+let array = [9, 8, 7, 6, 5];
+const userNum = prompt("Угадайте число от 5 до 9");
+if (array.includes(Number(userNum))) {
+    alert("Угадал");
+} else {
+    alert("Не угадал");
+}
