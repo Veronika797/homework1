@@ -2,3 +2,12 @@
 let str = 'js';
 let upperStr = str.toUpperCase();
 console.log(upperStr);
+
+// 2
+function filterArrayOfString(array, prefix) {
+    return array.filter(item => item.toLowerCase().startsWith(prefix.toLowerCase()));
+}
+const string = ['книга', 'кинжал', 'кирпич', 'икра', 'игра'];
+const prefix = 'ки';
+const result = filterArrayOfString(string, prefix);
+console.log(result);
