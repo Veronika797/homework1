@@ -63,3 +63,7 @@ function acceptTwoCeilReturnRandom(min, max) {
 }
 const result = acceptTwoCeilReturnRandom(1, 10);
 console.log(result);
+
+// 8
+const currentDate = new Date();
+console.log(currentDate)
