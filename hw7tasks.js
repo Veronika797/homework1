@@ -22,3 +22,10 @@ console.log(roundedUp);
 
 const roundedNearest = Math.round(number);
 console.log(roundedNearest);
+
+// 4
+const numbers = [52, 53, 49, 77, 21, 32];
+const minVal = Math.min(...numbers);
+const maxVal = Math.max(...numbers);
+console.log(minVal);
+console.log(maxVal);
