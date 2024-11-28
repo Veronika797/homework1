@@ -7,10 +7,10 @@ console.log(upperStr);
 function filterArrayOfString(array, prefix) {
     return array.filter(item => item.toLowerCase().startsWith(prefix.toLowerCase()));
 }
-const string = ['книга', 'кинжал', 'кирпич', 'икра', 'игра'];
-const prefix = 'ки';
-const result = filterArrayOfString(string, prefix);
-console.log(result);
+// const string = ['книга', 'кинжал', 'кирпич', 'икра', 'игра'];
+// const prefix = 'ки';
+// const result = filterArrayOfString(string, prefix);
+// console.log(result);
 
 // 3
 let number = 32.58884;
@@ -52,3 +52,14 @@ return randomArray;
 }
 const res = acceptCeilReturnRandom(10);
 console.log(res);
+
+// 7
+function acceptTwoCeilReturnRandom(min, max) {
+    if(!Number.isInteger(min) || !Number.isInteger(max) || min >= max) {
+        alert("Введите два ццелых числа, где первое меньше второго");
+    }
+    const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+    return randomNum;
+}
+const result = acceptTwoCeilReturnRandom(1, 10);
+console.log(result);
