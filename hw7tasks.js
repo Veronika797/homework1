@@ -66,4 +66,9 @@ console.log(result);
 
 // 8
 const currentDate = new Date();
-console.log(currentDate)
+console.log(currentDate);
+
+// 9
+const in73Days = new Date(currentDate);
+in73Days.setDate(currentDate.getDate() + 73);
+console.log(in73Days);
