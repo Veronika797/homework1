@@ -29,3 +29,10 @@ const minVal = Math.min(...numbers);
 const maxVal = Math.max(...numbers);
 console.log(minVal);
 console.log(maxVal);
+
+// 5
+function getRandomNumber() {
+    const randomNum = Math.floor(Math.random() * 10) + 1;
+    console.log(randomNum);
+}
+getRandomNumber();
