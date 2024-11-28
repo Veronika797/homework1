@@ -36,3 +36,19 @@ function getRandomNumber() {
     console.log(randomNum);
 }
 getRandomNumber();
+
+// 6
+function acceptCeilReturnRandom(n) {
+if(!Number.isInteger(n) || n <= 0) {
+    alert("Вы ввели некорректное число")
+}
+const length = Math.floor(n / 2);
+const randomArray = [];
+for (let i = 0; i < length; i++) {
+    const randomNum = Math.floor(Math.random() * n);
+    randomArray.push(randomNum);
+}
+return randomArray;
+}
+const res = acceptCeilReturnRandom(10);
+console.log(res);
