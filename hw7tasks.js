@@ -61,12 +61,12 @@ function acceptTwoCeilReturnRandom(min, max) {
     const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
     return randomNum;
 }
-const result = acceptTwoCeilReturnRandom(1, 10);
-console.log(result);
+const resul = acceptTwoCeilReturnRandom(1, 10);
+console.log(resul);
 
 // // 8
-const currentDate = new Date();
-console.log(currentDate);
+const curDate = new Date();
+console.log(curDate);
 
 // // 9
 const in73Days = new Date(currentDate);
