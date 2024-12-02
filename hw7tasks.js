@@ -65,8 +65,8 @@ const resul = acceptTwoCeilReturnRandom(1, 10);
 console.log(resul);
 
 // // 8
-const curDate = new Date();
-console.log(curDate);
+const currentDate = new Date();
+console.log(currentDate);
 
 // // 9
 const in73Days = new Date(currentDate);
@@ -74,26 +74,48 @@ in73Days.setDate(currentDate.getDate() + 73);
 console.log(in73Days);
 
 // // 10
-function dateReturnFormat(date) {
-    const months = ['январь', 'февраль',
-                    'март', 'апрель', 
-                    'май', 'июнь',
-                    'июль', 'август',
-                    'сентябрь', 'октябрь', 
-                    'ноябрь', 'декабрь'];
-    const daysOfWeek = ['воскресенье', 'понедельник', 'вторник', 
-                    'среда', 'четверг', 'пятница', 'суббота'];
-    const day = date.getDate();
-    const month = months[date.getMonth()];
-    const year = date.getFullYear();
-    const dayOfWeek = daysOfWeek[date.getDay()];
-    const hours = String(date.getHours()).padStart(2, '0');
-    const minutes = String(date.getMinutes()).padStart(2, '0');
-    const seconds = String(date.getSeconds()).padStart(2, '0');
+// function dateReturnFormat(date) {
+//     const months = ['январь', 'февраль',
+//                     'март', 'апрель', 
+//                     'май', 'июнь',
+//                     'июль', 'август',
+//                     'сентябрь', 'октябрь', 
+//                     'ноябрь', 'декабрь'];
+//     const daysOfWeek = ['воскресенье', 'понедельник', 'вторник', 
+//                     'среда', 'четверг', 'пятница', 'суббота'];
+//     const day = date.getDate();
+//     const month = months[date.getMonth()];
+//     const year = date.getFullYear();
+//     const dayOfWeek = daysOfWeek[date.getDay()];
+//     const hours = String(date.getHours()).padStart(2, '0');
+//     const minutes = String(date.getMinutes()).padStart(2, '0');
+//     const seconds = String(date.getSeconds()).padStart(2, '0');
 
-    const dateString = `Дата: ${day} ${month} ${year} - это ${dayOfWeek}`;
-    const timeString = `Время: ${hours}:${minutes}:${seconds}`;
+//     const dateString = `Дата: ${day} ${month} ${year} - это ${dayOfWeek}`;
+//     const timeString = `Время: ${hours}:${minutes}:${seconds}`;
+//     return `${dateString} ${timeString}`;
+// }
+// const currentDate = new Date();
+// console.log(dateReturnFormat(currentDate));
+
+function dateReturnFormat(date) {
+    const formatterDate = new Intl.DateTimeFormat('ru-RU', {
+        weekday: 'long',
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric',
+    });
+
+    const formatterTime = new Intl.DateTimeFormat('ru-RU', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+    });
+
+    const dateString = `Дата: ${formatterDate.format(date)}`;
+    const timeString = `Время: ${formatterTime.format(date)}`;
     return `${dateString} ${timeString}`;
 }
-const currentDate = new Date();
+
+// const currentDate = new Date();
 console.log(dateReturnFormat(currentDate));
