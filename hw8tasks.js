@@ -36,7 +36,7 @@ function isPositive(item) {
     
     console.log(filter(peoples, isMale));
 
-    // 3
+// 3
     function displayCurrentDate() {
     const currentDate = new Date();
     console.log(currentDate.toLocaleString());
@@ -47,7 +47,7 @@ function isPositive(item) {
         console.log("30 секунд прошло");
     }, 30000);
 
-    // 4
+// 4
     function delayForSecond(callback) {
         setTimeout(() => {
             callback();
@@ -57,3 +57,17 @@ function isPositive(item) {
     delayForSecond(function () {
        console.log('Привет, Глеб!');
     })
+
+// 5
+    function delayForSecond(cb) {
+        setTimeout(() => {
+            console.log('Прошла одна секунда');
+            if(cb) {  cb(); }
+        }, 1000)
+    }
+  
+    function sayHi (name) {
+        console.log(`Привет, ${name}!`);
+    }
+
+    delayForSecond(() => sayHi('Глеб'))
