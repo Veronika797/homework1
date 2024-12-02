@@ -35,3 +35,14 @@ function isPositive(item) {
     ];
     
     console.log(filter(peoples, isMale));
+
+    // 3
+    function displayCurrentDate() {
+    const currentDate = new Date();
+    console.log(currentDate.toLocaleString());
+    }
+    const intervalId = setInterval(displayCurrentDate, 3000);
+    setTimeout(() => {
+        clearInterval(intervalId);
+        console.log("30 секунд прошло");
+    }, 30000);
