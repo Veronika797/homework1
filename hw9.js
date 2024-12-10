@@ -11,3 +11,10 @@ button.addEventListener('click', () => {
         button.textContent = 'Показать';
     }
 });
+
+// 2
+const text = document.querySelector('#text');
+const btn = document.querySelector('#colorButton');
+btn.addEventListener('click', () => { 
+    text.style.color = 'blue';
+});
