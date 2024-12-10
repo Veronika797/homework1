@@ -18,3 +18,10 @@ const btn = document.querySelector('#colorButton');
 btn.addEventListener('click', () => { 
     text.style.color = 'blue';
 });
+
+// 3
+const text2 = document.querySelector('#headerText');
+const button2 = document.querySelector('#changeTextBtn');
+button2.addEventListener('click', () => { 
+    text2.textContent = 'Привет, мир!';
+});
