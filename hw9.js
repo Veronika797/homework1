@@ -43,3 +43,11 @@ buttonCngTxt.addEventListener('click', () => {
         element.textContent = 'Новый текст';
     });
 });
+
+// 6
+const addElBtn = document.querySelector('#addElBtn');
+addElBtn.addEventListener('click', () => {
+const newText = document.createElement('p');
+newText.textContent = 'Новый абзац';
+document.body.appendChild(newText);
+})
