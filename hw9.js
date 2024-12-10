@@ -50,4 +50,15 @@ addElBtn.addEventListener('click', () => {
 const newText = document.createElement('p');
 newText.textContent = 'Новый абзац';
 document.body.appendChild(newText);
-})
+});
+
+// 7
+const removeElBtn = document.querySelector('#removeElBtn');
+removeElBtn.addEventListener('click', () => {
+    const firstDescription = document.querySelector('.description');
+    if (firstDescription) {
+        firstDescription.remove();
+    } else {
+        alert('Элементы с классом description не найдены');
+    }
+});
