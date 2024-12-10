@@ -34,3 +34,12 @@ button3.addEventListener('click', () => {
         element.textContent = 'Измененный текст';
     });
 });
+
+// 5
+const buttonCngTxt = document.querySelector('#textCngBtn');
+buttonCngTxt.addEventListener('click', () => { 
+    const descriptions = document.querySelectorAll('.description');
+    descriptions.forEach(element => {
+        element.textContent = 'Новый текст';
+    });
+});
