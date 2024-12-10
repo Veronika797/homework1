@@ -25,3 +25,12 @@ const button2 = document.querySelector('#changeTextBtn');
 button2.addEventListener('click', () => { 
     text2.textContent = 'Привет, мир!';
 });
+
+// 4
+const button3 = document.querySelector('#changeTextButton');
+button3.addEventListener('click', () => { 
+    const descriptions = document.querySelectorAll('.description');
+    descriptions.forEach(element => {
+        element.textContent = 'Измененный текст';
+    });
+});
