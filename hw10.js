@@ -183,7 +183,7 @@ function determineWinner(userChoise, compChoise) {
         }
         return color;
     }
-    const colorBox = document.getElementById('block-content');
+    const colorBox = document.getElementById('colorButton');
     colorBox.addEventListener('click', () => {
         colorBox.style.backgroundColor = randomColorGame();
     });

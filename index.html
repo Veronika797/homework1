@@ -17,23 +17,39 @@
         <img class="star4" src="img/Star5.png" alt="star4">
     <div class="header-content">
         <h1 class="header__text">Добро пожаловать<br> на мой сайт мини-игр</h1>
-        <h2 class="header__description">Тебе предстоит пройти несколько увлекательных игр.<br> Если готов, нажимай <strong>«Поехали!»</strong>и <strong>приступай.</strong></h2>
+        <h2 class="header__description">Тебе предстоит пройти несколько увлекательных игр.<br> Если готов, нажимай <strong>«Поехали!»</strong> и <strong>приступай.</strong></h2>
         <button class="header__button" onclick="location.href='#block-content'">Поехали!</button>
-    </header>
-    <div class="header-line">
-        <p class="header-line__game">Викторина</p>
-        <img class="header-line__img" src="img/StarBlack.png" alt="games">
-        <p class="header-line__game">угадай число</p>
-        <img class="header-line__img" src="img/StarBlack.png" alt="games">
-        <p class="header-line__game">Переверни текст</p>
-        <img class="header-line__img" src="img/StarBlack.png" alt="games">
-        <p class="header-line__game">Простая арифметика</p>
-        <img class="header-line__img" src="img/Starblack.png" alt="games">
-        <p class="header-line__game">камень, ножницы, бумага</p>
-        <img class="header-line__img" src="img/Starblack.png" alt="games">
-        <p class="header-line__game">генератор случайных цветов</p>
-        <img class="header-line__img" src="img/Starblack.png" alt="games">
     </div>
+    </header>
+    <div class="header-line__wrap">
+        <div class="header-line">
+            <p class="header-line__game">Викторина</p>
+            <img class="header-line__img" src="img/StarBlack.png" alt="games">
+            <p class="header-line__game">угадай число</p>
+            <img class="header-line__img" src="img/StarBlack.png" alt="games">
+            <p class="header-line__game">Переверни текст</p>
+            <img class="header-line__img" src="img/StarBlack.png" alt="games">
+            <p class="header-line__game">Простая арифметика</p>
+            <img class="header-line__img" src="img/Starblack.png" alt="games">
+            <p class="header-line__game">камень, ножницы, бумага</p>
+            <img class="header-line__img" src="img/Starblack.png" alt="games">
+            <p class="header-line__game">генератор случайных цветов</p>
+            <img class="header-line__img" src="img/Starblack.png" alt="games">
+            <p class="header-line__game">Викторина</p>
+            <img class="header-line__img" src="img/StarBlack.png" alt="games">
+            <p class="header-line__game">угадай число</p>
+            <img class="header-line__img" src="img/StarBlack.png" alt="games">
+            <p class="header-line__game">Переверни текст</p>
+            <img class="header-line__img" src="img/StarBlack.png" alt="games">
+            <p class="header-line__game">Простая арифметика</p>
+            <img class="header-line__img" src="img/Starblack.png" alt="games">
+            <p class="header-line__game">камень, ножницы, бумага</p>
+            <img class="header-line__img" src="img/Starblack.png" alt="games">
+            <p class="header-line__game">генератор случайных цветов</p>
+            <img class="header-line__img" src="img/Starblack.png" alt="games">
+        </div>
+    </div>
+    
 <main class="content center" id="block-content">
         <img class="star5" src="img/StarLit.png" alt="star5">
         <img class="star6" src="img/StarMedi.png" alt="star6">
@@ -41,14 +57,14 @@
         <h1 class="content__text">Об играх</h1>
         <h2 class="content__description">В моей коллекции представлено 6 игр на разные темы.<br> Игры несложные — в них может поиграть каждый.<br> Все игры доступны для пользования.</h2>
     <div class="content-box">
-       <section class="content-section">
-        <a class="item item1" href="#game1">
+       <div class="content-section">
+                <a class="item item1" href="#game1">
                     <img class="game" src="img/cart.png" alt="game">
                     <article class="item-info">
                         <h3 class="item__text">Игра № 1</h3>
                         <p class="item__description">Угадай число</p>
                     </article>
-            </a>
+                </a>
                 <a class="item item2" href="#game2">
                     <img class="game" src="img/cart1.png" alt="game">
                     <article class="item-info">
@@ -63,8 +79,8 @@
                         <p class="item__description">Переверни текст</p>
                     </article>
                 </a>
-       </section>
-        <section class="content-section__bottom">
+       <!-- </div>
+        <div class="content-section__bottom"> -->
         <a class="item item4" href="#game5">
             <img class="game" src="img/cart3.png" alt="game">
             <article class="item-info">
@@ -86,7 +102,7 @@
                 <p class="item__description">Генератор случайных цветов</p>
             </article>
         </a>
-    </section>
+    </div>
     </div>
     <div class="mini-games">
         <img class="star7" src="img/Starr7.png" alt="star7">
@@ -152,7 +168,7 @@
                 <div class="mini-games__top">
                     <h3 class="mini-games__name">Генератор <br>случайных <br>цветов</h3>
                     <p class="mini-games__description">Игра, в которой при клике на кнопку<br> фон страницы меняется на случайный.</p>
-                    <button class="mini-games__button" onclick="randomColorGame">Играть!</button>
+                    <button class="mini-games__button" id="colorButton">Играть!</button>
                 </div>
             </article>
         </div>

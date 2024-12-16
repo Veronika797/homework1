@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: "Montserrat", system-ui;
+    font-family: "$font", system-ui;
     font-weight: 400;
     text-decoration: none;
 }
@@ -21,6 +21,7 @@ body {
 }
 
 .header {
+    max-width: 1200px;
     overflow: hidden;    
     position: relative;
     padding-bottom: 156px;
@@ -28,47 +29,47 @@ body {
     padding-top: 196px;
     &__text {
         max-width: 768px;
-        max-width: 768px;
         font-size: 64px;
-        font-weight: 700;
+        font-weight: $fntWght;
         line-height: 78.02px;
         text-align: left;
         margin-bottom: 24px;
     }
     &__description {
         max-width: 768px;
-        max-width: 768px;
-        font-size: 24px;
+        font-size: $sizeText;
         font-weight: 400;
         line-height: 32px;
         text-align: left;
         margin-bottom: 48px;
     }
     &__button {
-        color: rgb(255, 255, 255);
-        font-family: Montserrat;
-        font-size: 24px;
+        color: $color;
+        font-family: $font;
+        font-size: $sizeText;
         font-weight: 600;
         line-height: 141.69%;
         letter-spacing: 0%;
         text-align: center;
     }
+    &-line__wrap {
+        background-color: rgb(188, 236, 48);
+        overflow: hidden;
+    }
     &-line {
         white-space: nowrap;
-        overflow: hidden;
-        padding-left: 17px;
-        white-space: nowrap;
-        overflow: hidden;
+        // overflow: hidden;
         padding-left: 17px;
         height: 90px;
-        background-color: rgb(188, 236, 48);
         display: flex;
         gap: 51px;
         align-items: center;
+        animation: text 30s infinite linear;
+        // width: fit-content;
         &__game {
             color: rgb(32, 32, 39);
             font-size: 30px;
-            font-weight: 700;
+            font-weight: $fntWght;
             line-height: 33px;
             letter-spacing: 0.04em;
             text-align: left;
@@ -84,6 +85,15 @@ body {
         color: black;
         cursor: pointer;
         transition: 0.5s;
+    }
+}
+
+@keyframes text {
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(-100%, 0);
     }
 }
 
@@ -113,13 +123,13 @@ body {
     }
     &5 {
         position: absolute;
-        top: 16%;
-        left: 1%;
+        top: 92vh;
+        left: 1vh;
     }
     &6 {
         position: absolute;
-        top: 17%;
-        left: 3%;
+        top: 98vh;
+        left: 5vh;
     }
     &-big {
         position: absolute;
@@ -153,7 +163,7 @@ body {
 
 
 button {
-    font-family: Montserrat;
+    font-family: $font;
     width: 247px;
     height: 66px;
     padding: 16px 28px 16px 28px;
@@ -171,9 +181,9 @@ button {
     &__text {
         padding-top: 94px;
         padding-bottom: 24px;
-        color: rgb(255, 255, 255);
+        color: $color;
         font-size: 64px;
-        font-weight: 700;
+        font-weight: $fntWght;
         line-height: 78px;
         letter-spacing: 0px;
         text-align: left;
@@ -181,39 +191,30 @@ button {
     &__description {
         max-width: 788px;
         padding-bottom: 72px;
-        color: rgb(255, 255, 255);
-        font-size: 24px;
+        color: $color;
+        font-size: $sizeText;
         font-weight: 400;
         line-height: 32px;
         letter-spacing: 0px;
         text-align: left;
     }
     &-box {
-        display: flex;
         flex-wrap: wrap;
-        // gap: 32px;
         align-items: center;
         padding-bottom: 50px;
     }
     &-section {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(24, 1fr);
         gap: 32px;
-        align-items: flex-start;
-    }
-    &-section__bottom {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 32px;
-        align-items: flex-end;
     }
     &__mini-games {
-        padding-top: 48px;
+        padding-top: $pdng;
     }
-    
     &__game-name {
         font-size: 48px;
-        font-weight: 700;
+        font-weight: $fntWght;
         line-height: 58.51px;
         text-align: left;
         color: rgba(32, 32, 39, 1);
@@ -221,6 +222,7 @@ button {
 }
 
 .item {
+    grid-column: span 4;
     z-index: 1;
     text-decoration: none;
     width: 378px;
@@ -251,7 +253,7 @@ button {
     &__description {
         color: rgb(32, 32, 39);
         font-size: 32px;
-        font-weight: 700;
+        font-weight: $fntWght;
         line-height: 39px;
         letter-spacing: 0px;
         text-align: left;
@@ -260,14 +262,14 @@ button {
         transform: scale(1.1);
         transition: 1.2s;
     }
-    &1, &3 {
-        height: 473px;
+    &1, &3, &5 {
+        grid-row: span 11;
     }
-    &2, &5 {
-        height: 512px;
+    &2, &4, &6 {
+        grid-row: span 12;
     }
-    &4, &6 {
-        height: 551px;
+    &5 {
+        order: 5;
     }
 }
 
@@ -281,9 +283,9 @@ button {
         height: 100%;
     }
     &__button {
-        color: rgb(255, 255, 255);
-        font-family: Montserrat;
-        font-size: 24px;
+        color: $color;
+        font-family: $font;
+        font-size: $sizeText;
         font-weight: 600;
         line-height: 141.69%;
         text-align: center;
@@ -296,7 +298,7 @@ button {
     }
     &__text {
         font-size: 64px;
-        font-weight: 700;
+        font-weight: $fntWght;
         line-height: 78.02px;
         text-align: left;
         color: rgba(255, 255, 255, 1);
@@ -304,7 +306,7 @@ button {
     }
     &__top {
         max-width: 504px;
-        padding: 48px;
+        padding: $pdng;
     }
     &__bottom {
         height: 100%;
@@ -324,7 +326,7 @@ button {
         padding: 0px;
         border-radius: 30px;
         box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
-        background: rgb(255, 255, 255);
+        background: $color;
     }
     &__choise:hover {
         transform: scale(1.1);
@@ -333,13 +335,13 @@ button {
     }
     &__name {
         font-size: 48px;
-        font-weight: 700;
+        font-weight: $fntWght;
         line-height: 59px;
         letter-spacing: 0px;
         text-align: left;  
     }
     &__description {
-        font-size: 24px;
+        font-size: $sizeText;
         font-weight: 400;
         line-height: 32px;
         letter-spacing: 0px;
@@ -383,7 +385,7 @@ button {
     &-text {
         padding-top: 61px;
         color: rgb(0, 0, 0);
-        font-size: 24px;
+        font-size: $sizeText;
         font-weight: 600;
         line-height: 29px;
         display: flex;

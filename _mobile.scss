@@ -1,14 +1,52 @@
 @media (max-width: 767px) {
-   
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .center {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 
-    .content-top {
-        display: none;
+    .content {
+        padding-bottom: 50px;
+        &-top {
+            display: none;
+        }
+        &__text {
+            padding-top: 25px;
+            font-size: 38px;
+            padding-bottom: 5px;
+        }
+        &__description {
+            font-size: 18px;
+            padding-bottom: 25px;
+        }
+        &-section {
+            grid-template-rows: unset;
+        }
+        &-box {
+            padding-bottom: 0;
+            gap: 32px;
+        }
+    }
+
+    .item {
+        grid-row: unset;
+        grid-column: span 12;
+        &5 {
+            order: unset;
+        }
+        &:hover {
+            transform: unset;
+        }
     }
 
     .header {
         background-image: url(img/starMobile.png);
         background-repeat: no-repeat;
-        background-position: 290px 0px;
+        background-position: 100% -1%;
         padding-top: 149px;
         &-content {
             text-align: center;
@@ -43,11 +81,7 @@
         }
     }
     
-    // .mini-games {
-    //     display: none;
-    // }
-
-.mini-games {
+    .mini-games {
     padding-top: 46px;;
         &__box {
             display: flex;
@@ -55,10 +89,10 @@
         }
         &__text {
             font-size: 40px;
-            font-weight: 700;
+            font-weight: $fntWght;
             line-height: 48.76px;
             text-align: left;
-            padding-bottom: 48px;
+            padding-bottom: $pdng;
         }
         &__top {
             padding: 29px 29px 32px 29px;
@@ -71,6 +105,9 @@
             height: auto;
             width: 100%;
             gap: 0;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
         }
         &__name {
             width: 285px;
@@ -92,107 +129,79 @@
     }
 
     .mini-games__choise:hover {
-        transform: scale(1);
+        transform: unset;
     }
       
-        .game1, 
-        .game3,
-        .game5 {
+    .game1, .game3,.game5 {
             display: flex;
             flex-direction: column-reverse; 
-        }
+    }
     
-        .game2, 
-        .game4,
-        .game6 {
+    .game2, .game4, .game6 {
             display: flex;
             flex-direction: column;
-        }
+    }
 
-       .item, .game {
+    .item, .game {
         width: 100%
-       }
-        
-        .content {
-            padding-bottom: 50px;
-            &__text {
-                padding-top: 48px;
-                font-size: 40px;
-                padding-bottom: 16px;
-            }
-            &__description {
-                padding-bottom: 48px;
-                padding-top: 0;
-            }
-            &-box {
-                padding-bottom: 0;
-                gap: 32px;
-            }
-        }
+    }
 
-        .star, .star5, .star6, .star-big {
+    .star, .star5, .star6, .star-big {
             display: none;
-        }
+    }
 
-        .star1 {
+    .star1 {
             position: absolute;
             top: 13%;
             left: 12%;
             height: 35px;
-        }
+    }
 
-        .star2 {
+    .star2 {
             position: absolute;
             top: 7%;
             left: 25%;
             height: 21px;
-        }
+    }
 
-        .star3 {
+    .star3 {
             position: absolute;
             top: 90%;
             left: 80%;
             height: 41px;
-        }
+    }
 
-        .star4 {
+    .star4 {
             top: 627px;
             left: 253px;
             position: absolute;
             height: 18px;
             top: 85%;
             left: 72%;
-        }
-
-
-        // .star3,
-        // .star4,
-        .star7,
-        .star8,
-        .star9, 
-        .star10 {
+    }
+        
+    .star7, .star8, .star9, .star10 {
             display: none;
-        }
+    }
 
-        .header__button:hover {
+    .header__button:hover {
             background-color: rgb(32, 32, 39);;
             color: #fff;
             cursor: pointer; ;
-        }
+    }
 
-        .item:hover {
+    .item:hover {
             transform: scale(1);
-        }
+    }
     
-        .footer {
+    .footer {
             height: 100px;
             &-text {
                 font-size: 16px;
                 line-height: 19.5px;
                 padding-top: 40px;
             }
-        }
-    
+    }
 }
 
 @media (min-width: 320px) and (max-width: 424px) {
@@ -201,16 +210,16 @@
         padding-right: 16px;
     }
 
-    // .content-top {
-    //     display: none;
-    // }
-
-    .header {
-        background-position: 110% 0%;
-    }
-
-    .content-section, .content-section__bottom {
-        width: 343px;
+    .content {
+        padding-bottom: $pdng;
+        &-section {
+            display: flex;
+            flex-direction: column;
+            width: unset;
+        }
+        &__text {
+            font-size: 40px;
+        }
     }
 
     .game {
@@ -223,10 +232,10 @@
         }
         &__text {
             font-size: 40px;
-            font-weight: 700;
+            font-weight: $fntWght;
             line-height: 48.76px;
             text-align: left;
-            padding-bottom: 48px;
+            padding-bottom: $pdng;
         }
         &__top {
             padding-left: 29px;
@@ -234,25 +243,24 @@
         &__button {
             font-size: 16px;
         }
+        &__choise:hover {
+            transform: unset;
+        }
     }
       
-        .game1, 
-        .game3,
-        .game5 {
+    .game1, .game3, .game5 {
             display: flex;
             flex-direction: column-reverse; 
-        }
+    }
     
-        .game2, 
-        .game4,
-        .game6 {
+    .game2, .game4, .game6 {
             display: flex;
             flex-direction: column;
-        }
+    }
     
-        .content__game-name {
+    .content__game-name {
             font-size: 32px;
-            font-weight: 700;
+            font-weight: $fntWght;
             line-height: 39.01px;
             text-align: left;
             &__description {
@@ -263,15 +271,25 @@
                 text-align: left;
                 padding-top: 16px;
             }
-        }
+    }
     
+    .item {
+        width: 100%;
+        grid-column: span 10;
+        &5 {
+                order: unset;
+        }
+        &:hover {
+            transform: unset;
+        }
+    }
        
-        .footer {
+    .footer {
             height: 100px;
             &-text {
                 font-size: 16px;
                 line-height: 19.5px;
                 padding-top: 40px;
             }
-        }
+    }
 }
