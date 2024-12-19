@@ -1,0 +1,237 @@
+@media (min-width: 1025px) and (max-width: 1439px) {
+    .center {
+        padding-left: calc(50% - 393px);
+        padding-right: calc(50% - 393px);
+    }
+
+    .content-section {
+        grid-template-rows: unset;
+    }
+       
+    .item5 {
+        order: unset;
+    }
+
+    .item1, .item2, .item3, 
+    .item4, .item5, .item6 {
+        grid-row: unset;
+        grid-column: span 6;
+    }
+
+    .mini-games__top {
+        padding: 28px;
+    }
+
+    .star {
+        &7 {
+            top: 38%;
+            left: 84%;
+        }
+        &8 {
+            top: 39%;
+            left: 89%;
+        }
+        &-big {
+            top: 2%;
+            left: 63%;
+        }
+    }
+}
+
+@media (min-width: 834px) and (max-width: 1024px) {
+  
+    .center {
+        padding-left: calc(50% - 393px);
+        padding-right: calc(50% - 393px);
+    }
+
+    .content {
+        padding-bottom: 125px;
+        &__text {
+            padding-top: 60px;
+        }
+        &-section {
+            grid-template-rows: unset;
+        }
+        &__description {
+            padding-bottom: 50px;
+        }
+        &-box {
+            display: none;
+        }
+    }
+       
+    .header-line {
+        height: 70px;
+    }
+
+    .mini-games {
+        padding-top: 60px;
+        &__text {
+            padding-bottom: 50px;
+        }
+        &__top {
+            padding: 28px;
+        }
+        &__choise {
+            height: 400px;
+        }
+        &__name {
+            font-size: 34px;
+            line-height: normal;
+        }
+        &__description {
+            margin-top: 12px;
+            margin-bottom: 20px;
+        }
+        &__button {
+            width: 200px;
+        }
+        &__box {
+            gap: 25px;
+        }
+    }
+
+    .item1, .item2, .item3, 
+    .item4, .item5, .item6 {
+        grid-row: unset;
+        grid-column: span 6;
+    }
+
+    .star {
+        &5, &6, &-big, &7, &8 {
+            display: none;
+        }
+    }
+
+    .item5 {
+        order: unset;
+    }
+
+    .footer {
+        height: 130px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 833px) {
+
+   .center {
+    padding-left: 24px;
+    padding-right: 24px;
+   }
+
+   .header {
+    &-line {
+        height: 60px;
+    }
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+   &__text {
+        font-size: 56px;
+        line-height: normal;
+   }
+   &__button {
+        width: 200px;
+   }
+}
+
+   .content {
+    padding-bottom: 60px;
+    &-section {
+        grid-template-rows: unset;
+       }
+       &__text {
+        padding-top: 40px;
+        padding-bottom: 15px;
+       }
+       &__description {
+        font-size: 18px;
+        line-height: 25px;
+        padding-bottom: 40px;
+       }
+       &-box {
+        display: none;
+       }
+   }
+   
+   .star {
+        display: none;
+    &5, &6, &-big, &7, &8, &9, &10 {
+        display: none;
+    }
+   }
+
+   .item {
+    width: 100%;
+    &:hover {
+        transform: scale(0.9);
+    }
+    &1, &2, &3, &4, &5, &6 {
+        grid-row: unset;
+    }
+        grid-column: span 6;
+    &5 {
+        order: unset;
+    }
+    &-info {
+        padding: 20px;
+    }
+    &__text {
+        font-size: 14px;
+        padding: 5px 13px 7px 13px;
+    }
+    &__description {
+        font-size: 32px;
+    }
+    }
+
+    .game {
+        width: 100%;
+    }
+
+    .mini-games {
+        padding-top: 45px;
+        &__text {
+            padding-bottom: 40px;
+        }
+        &__choise {
+            height: 350px;
+        }
+        &__choise:hover {
+            transform: scale(0.9);
+        }
+        &__top {
+            padding: 18px;
+        }
+        &__box {
+            gap: 20px;
+        }
+        &__text {
+            font-size: 56px;
+        }
+        &__name {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        &__description {
+            font-size: 21px;
+            line-height: 23px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+        &__button {
+            width: 200px;
+        }
+    }
+
+    .footer {
+        height: 90px;
+        &-text {
+            padding-top: 35px;
+        }
+    }
+
+}
