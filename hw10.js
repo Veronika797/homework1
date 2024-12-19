@@ -32,9 +32,9 @@ function generateTasks() {
     const num2 = getRandomNumber();
     const operators = ['+', '-', '*', '/'];
     const operator = operators[getRandomIndexOperator(1)];
-    if (operator === '/' && num2 === 0) {
-                num2 = 1;
-            }
+    // if (operator === '/' && num2 === 0) {
+    //             num2 = 1;
+    //         }
     let result;
     switch (operator) {
                 case '+':

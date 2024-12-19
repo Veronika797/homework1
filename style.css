@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-family: "$font", system-ui;
+  font-family: "Montserrat", system-ui;
   font-weight: 400;
   text-decoration: none;
 }
@@ -44,7 +44,7 @@ body {
 }
 .header__button {
   color: rgb(255, 255, 255);
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-size: 24px;
   font-weight: 600;
   line-height: 141.69%;
@@ -157,7 +157,7 @@ body {
 }
 
 button {
-  font-family: "Montserrat";
+  font-family: Montserrat;
   width: 247px;
   height: 66px;
   padding: 16px 28px 16px 28px;
@@ -216,6 +216,7 @@ button {
 }
 
 .item {
+  transition: 1.2s;
   grid-column: span 4;
   z-index: 1;
   text-decoration: none;
@@ -239,7 +240,7 @@ button {
   font-weight: 500;
   line-height: 110%;
   letter-spacing: 0px;
-  text-align: left;
+  text-align: center;
   border-radius: 52.58px;
   width: 107px;
   background: rgb(247, 247, 247);
@@ -255,7 +256,6 @@ button {
 }
 .item:hover {
   transform: scale(1.1);
-  transition: 1.2s;
 }
 .item1, .item3, .item5 {
   grid-row: span 11;
@@ -279,7 +279,7 @@ button {
 }
 .mini-games__button {
   color: rgb(255, 255, 255);
-  font-family: "Montserrat";
+  font-family: Montserrat;
   font-size: 24px;
   font-weight: 600;
   line-height: 141.69%;
@@ -413,6 +413,7 @@ button {
     grid-template-rows: unset;
   }
   .content-box {
+    display: none;
     padding-bottom: 0;
     gap: 32px;
   }
@@ -436,7 +437,7 @@ button {
     text-align: center;
   }
   .header__text {
-    font-size: 40px;
+    font-size: 45px;
     line-height: 48.76px;
     text-align: center;
   }
@@ -471,7 +472,7 @@ button {
     gap: 32px;
   }
   .mini-games__text {
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 700;
     line-height: 48.76px;
     text-align: left;
@@ -576,6 +577,9 @@ button {
   .center {
     padding-left: 16px;
     padding-right: 16px;
+  }
+  .header__text {
+    font-size: 40px;
   }
   .content {
     padding-bottom: 48px;
@@ -700,11 +704,14 @@ button {
   .content__description {
     padding-bottom: 50px;
   }
+  .content-box {
+    display: none;
+  }
   .header-line {
     height: 70px;
   }
   .mini-games {
-    padding-top: 0;
+    padding-top: 60px;
   }
   .mini-games__text {
     padding-bottom: 50px;
@@ -779,6 +786,9 @@ button {
     line-height: 25px;
     padding-bottom: 40px;
   }
+  .content-box {
+    display: none;
+  }
   .star {
     display: none;
   }
@@ -812,7 +822,7 @@ button {
     width: 100%;
   }
   .mini-games {
-    padding-top: 0px;
+    padding-top: 45px;
   }
   .mini-games__text {
     padding-bottom: 40px;
@@ -828,6 +838,9 @@ button {
   }
   .mini-games__box {
     gap: 20px;
+  }
+  .mini-games__text {
+    font-size: 56px;
   }
   .mini-games__name {
     font-size: 32px;

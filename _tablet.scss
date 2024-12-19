@@ -56,6 +56,9 @@
         &__description {
             padding-bottom: 50px;
         }
+        &-box {
+            display: none;
+        }
     }
        
     .header-line {
@@ -63,7 +66,7 @@
     }
 
     .mini-games {
-        padding-top: 0;
+        padding-top: 60px;
         &__text {
             padding-bottom: 50px;
         }
@@ -149,6 +152,9 @@
         line-height: 25px;
         padding-bottom: 40px;
        }
+       &-box {
+        display: none;
+       }
    }
    
    .star {
@@ -187,7 +193,7 @@
     }
 
     .mini-games {
-        padding-top: 0px;
+        padding-top: 45px;
         &__text {
             padding-bottom: 40px;
         }
@@ -202,6 +208,9 @@
         }
         &__box {
             gap: 20px;
+        }
+        &__text {
+            font-size: 56px;
         }
         &__name {
             font-size: 32px;

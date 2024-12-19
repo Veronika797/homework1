@@ -27,6 +27,7 @@
             grid-template-rows: unset;
         }
         &-box {
+            display: none;
             padding-bottom: 0;
             gap: 32px;
         }
@@ -52,7 +53,7 @@
             text-align: center;
         }
         &__text {
-            font-size: 40px;
+            font-size: 45px;
             line-height: 48.76px;
             text-align: center;
         }
@@ -88,7 +89,7 @@
             gap: 32px;
         }
         &__text {
-            font-size: 40px;
+            font-size: 45px;
             font-weight: $fntWght;
             line-height: 48.76px;
             text-align: left;
@@ -208,6 +209,10 @@
     .center {
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    .header__text {
+        font-size: 40px;
     }
 
     .content {
