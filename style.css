@@ -43,6 +43,7 @@ body {
   margin-bottom: 48px;
 }
 .header__button {
+  transition: 1s;
   color: rgb(255, 255, 255);
   font-family: Montserrat;
   font-size: 24px;
@@ -81,7 +82,6 @@ body {
   background-color: #fff;
   color: black;
   cursor: pointer;
-  transition: 0.5s;
 }
 
 @keyframes text {
@@ -278,6 +278,7 @@ button {
   height: 100%;
 }
 .mini-games__button {
+  transition: 1s;
   color: rgb(255, 255, 255);
   font-family: Montserrat;
   font-size: 24px;
@@ -289,7 +290,6 @@ button {
   background-color: #fff;
   color: black;
   cursor: pointer;
-  transition: 0.5s;
 }
 .mini-games__text {
   font-size: 64px;
@@ -313,6 +313,7 @@ button {
   flex-direction: column;
 }
 .mini-games__choise {
+  transition: 1.2s;
   height: 500px;
   display: flex;
   flex-direction: row;
@@ -326,7 +327,6 @@ button {
 .mini-games__choise:hover {
   transform: scale(1.1);
   cursor: pointer;
-  transition: 1.2s;
 }
 .mini-games__name {
   font-size: 48px;

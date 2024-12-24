@@ -44,6 +44,7 @@ body {
         margin-bottom: 48px;
     }
     &__button {
+        transition: 1s;
         color: $color;
         font-family: $font;
         font-size: $sizeText;
@@ -84,7 +85,6 @@ body {
         background-color: #fff;
         color: black;
         cursor: pointer;
-        transition: 0.5s;
     }
 }
 
@@ -284,6 +284,7 @@ button {
         height: 100%;
     }
     &__button {
+        transition: 1s;
         color: $color;
         font-family: $font;
         font-size: $sizeText;
@@ -295,7 +296,6 @@ button {
         background-color: #fff;
         color: black;
         cursor: pointer;
-        transition: 0.5s;
     }
     &__text {
         font-size: 64px;
@@ -319,6 +319,7 @@ button {
         flex-direction: column;
     }
     &__choise {
+        transition: 1.2s;
         height: 500px;
         display: flex;
         flex-direction: row;
@@ -332,7 +333,7 @@ button {
     &__choise:hover {
         transform: scale(1.1);
         cursor: pointer;
-        transition: 1.2s;
+        // transition: 1.2s;
     }
     &__name {
         font-size: 48px;
